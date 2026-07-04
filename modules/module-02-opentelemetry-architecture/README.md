@@ -20,6 +20,9 @@ This module explains how telemetry is generated, transported, processed and cons
 ## Training assets
 
 - [Module narrative](module.md)
+- [Lab - Architecture mapping](lab.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Telemetry workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)

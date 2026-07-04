@@ -47,7 +47,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 ## Sprint 5 - Workshop Readiness
 
 - [x] Add final workshop delivery plan.
-- [ ] Add a lab index and execution order guide.
+- [x] Add a lab index and execution order guide.
 - [ ] Add troubleshooting guide for local lab setup.
 - [ ] Add module quality review checklist.
 - [ ] Add release readiness checklist for teaching delivery.

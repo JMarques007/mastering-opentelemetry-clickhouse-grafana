@@ -19,6 +19,7 @@ This module teaches alerting as a request for human action, with emphasis on own
 
 - [Module narrative](module.md)
 - [Exercise - Checkout error-rate alert](exercise.md)
+- [Lab - Checkout alert rule examples](../../labs/module-12-alert-rule-examples.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

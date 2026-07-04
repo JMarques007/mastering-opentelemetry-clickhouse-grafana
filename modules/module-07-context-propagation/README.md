@@ -1,25 +1,34 @@
 # Module 07 - Context Propagation
 
-This module explains how trace context travels across services so telemetry from one request can be joined into a coherent trace.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Explain trace context and propagation.
-- Understand W3C `traceparent` and baggage at a high level.
-- Recognize where context can be lost.
-- Diagnose broken traces and missing correlation.
+## Purpose
 
-## Main content
+This module explains how request identity is propagated across services so traces, logs and spans remain connected.
+
+## Main topics
+
+- W3C Trace Context and `traceparent`.
+- OpenTelemetry propagators.
+- Baggage and safety concerns.
+- Async and protocol boundaries.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Propagation break analysis](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Propagation workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-45 to 60 minutes.
+Draft available.
 
 ## Next module
 

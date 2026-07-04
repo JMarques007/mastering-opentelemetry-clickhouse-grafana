@@ -27,7 +27,8 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [ ] Split exercises, quizzes and references into dedicated files where useful.
   - [x] Module 01 dedicated `exercise.md`, `quiz.md` and `references.md` files.
   - [x] Module 02 dedicated `lab.md`, `quiz.md` and `references.md` files.
-  - [ ] Modules 03-14 dedicated practice and reference files where useful.
+  - [x] Modules 03-08 dedicated `exercise.md`, `quiz.md` and `references.md` files.
+  - [ ] Modules 09-14 dedicated practice and reference files where useful.
 - [x] Add a shared slide outline for Module 01.
 - [ ] Add a shared slide outline for Module 02.
 - [ ] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.

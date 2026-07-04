@@ -1,25 +1,34 @@
 # Module 03 - OpenTelemetry Collector
 
-This module teaches the OpenTelemetry Collector as the operational telemetry pipeline for receiving, processing and exporting signals.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Explain receivers, processors, exporters and pipelines.
-- Understand why the Collector is useful as a platform boundary.
-- Read a Collector configuration and predict how telemetry will move.
-- Recognize common production failure modes.
+## Purpose
 
-## Main content
+This module explains how the OpenTelemetry Collector receives, processes and exports telemetry in production observability architectures.
+
+## Main topics
+
+- Receivers, processors, exporters and pipelines.
+- Agent and gateway deployment patterns.
+- Collector health and operational risks.
+- Filtering, batching, enrichment and routing trade-offs.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Pipeline review](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
-- [Pipeline workflow](images/workflow.svg)
+- [Collector workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-60 minutes.
+Draft available.
 
 ## Next module
 

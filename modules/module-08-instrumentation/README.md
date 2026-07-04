@@ -1,25 +1,34 @@
 # Module 08 - Instrumentation
 
-This module teaches how to decide what to instrument and how to make telemetry meaningful without creating noise or cost problems.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Distinguish automatic and manual instrumentation.
-- Choose meaningful spans, metrics and attributes.
-- Understand semantic conventions.
-- Avoid common instrumentation mistakes.
+## Purpose
 
-## Main content
+This module teaches instrumentation as the engineering practice of designing useful telemetry around production questions.
+
+## Main topics
+
+- Automatic and manual instrumentation.
+- Choosing spans, metrics and logs.
+- Safe and consistent attributes.
+- Instrumentation review after deployment.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Business operation telemetry design](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Instrumentation workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-60 minutes.
+Draft available.
 
 ## Next module
 

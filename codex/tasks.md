@@ -49,7 +49,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add final workshop delivery plan.
 - [x] Add a lab index and execution order guide.
 - [x] Add troubleshooting guide for local lab setup.
-- [ ] Add module quality review checklist.
+- [x] Add module quality review checklist.
 - [ ] Add release readiness checklist for teaching delivery.
 - [ ] Update README navigation for delivery assets.
 

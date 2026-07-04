@@ -37,7 +37,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 ## Sprint 4 - Reproducible Labs and Examples
 
 - [x] Add a Collector to ClickHouse Docker Compose lab for Module 03.
-- [ ] Add a logs ingestion lab with structured OTLP log payloads.
+- [x] Add a logs ingestion lab with structured OTLP log payloads.
 - [ ] Add a metrics lab with counter, gauge and histogram payloads.
 - [ ] Add a trace correlation lab that links trace ids to logs.
 - [ ] Add ClickHouse SQL query examples for common observability investigations.

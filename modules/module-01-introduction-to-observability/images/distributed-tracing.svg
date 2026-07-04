@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Distributed tracing</title>
+  <desc id="desc">A request flows from a user through multiple services while trace context links all spans into one timeline.</desc>
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/></filter>
+    <marker id="arrowDark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#334155"/></marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#6d35d5"/></marker>
+    <linearGradient id="spanBlue" x1="0" x2="1"><stop stop-color="#0b63e5"/><stop offset="1" stop-color="#2f80ed"/></linearGradient>
+    <linearGradient id="spanPurple" x1="0" x2="1"><stop stop-color="#7c3aed"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
+    <style>
+      .title{font:700 52px Arial,sans-serif;fill:#06164f}.subtitle{font:400 22px Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#3b82f6;stroke-width:2;filter:url(#shadow)}.cardPurple{fill:#fbfaff;stroke:#7c3aed;stroke-width:2;filter:url(#shadow)}.h{font:700 18px Arial,sans-serif;fill:#0b4bd8}.hp{font:700 18px Arial,sans-serif;fill:#5b21b6}.small{font:500 13px Arial,sans-serif;fill:#334155}.tiny{font:500 11px Arial,sans-serif;fill:#334155}.axis{stroke:#cbd5e1;stroke-width:1;stroke-dasharray:5 5}.flow{stroke:#334155;stroke-width:3;marker-end:url(#arrowDark)}
+    </style>
+  </defs>
+  <rect width="1200" height="675" fill="#fbfdff"/>
+  <text x="600" y="66" text-anchor="middle" class="title">DISTRIBUTED TRACING</text>
+  <text x="600" y="105" text-anchor="middle" class="subtitle">End-to-end visibility of a request as it flows through multiple services</text>
+
+  <g transform="translate(38 144)">
+    <g transform="translate(0 0)"><rect width="94" height="114" rx="12" class="card"/><circle cx="47" cy="31" r="14" fill="none" stroke="#0b63e5" stroke-width="3"/><path d="M25 78c2-25 42-25 44 0" fill="none" stroke="#0b63e5" stroke-width="3"/><text x="47" y="96" text-anchor="middle" class="h">User</text></g>
+    <text x="150" y="34" class="h">1. Request</text><text x="135" y="58" class="small">GET /orders/123</text><line x1="94" y1="52" x2="210" y2="52" class="flow"/>
+    <g transform="translate(226 0)"><rect width="114" height="120" rx="12" class="card"/><circle cx="57" cy="38" r="20" fill="none" stroke="#0b63e5" stroke-width="3"/><path d="M37 38h40M57 18c12 14 12 27 0 40M57 18c-12 14-12 27 0 40" fill="none" stroke="#0b63e5" stroke-width="2"/><text x="57" y="86" text-anchor="middle" class="h">Web App</text><text x="57" y="109" text-anchor="middle" class="small">Service A</text></g>
+    <text x="376" y="34" class="h">2. Forward</text><line x1="354" y1="52" x2="438" y2="52" class="flow"/>
+    <g transform="translate(452 0)"><rect width="114" height="120" rx="12" class="card"/><circle cx="57" cy="24" r="6" fill="none" stroke="#0b63e5" stroke-width="3"/><circle cx="37" cy="55" r="6" fill="none" stroke="#0b63e5" stroke-width="3"/><circle cx="77" cy="55" r="6" fill="none" stroke="#0b63e5" stroke-width="3"/><path d="M57 30v14M57 44L37 55M57 44l20 11" stroke="#0b63e5" stroke-width="3" fill="none"/><text x="57" y="86" text-anchor="middle" class="h">API Gateway</text><text x="57" y="109" text-anchor="middle" class="small">Service B</text></g>
+    <text x="606" y="34" class="h">3. Route</text><line x1="580" y1="52" x2="664" y2="52" class="flow"/>
+    <g transform="translate(680 0)"><rect width="114" height="120" rx="12" class="card"/><path d="M57 24l8 4 8-4 8 14-8 5v10l8 5-8 14-8-4-8 4-8-4-8 4-8-14 8-5V43l-8-5 8-14 8 4z" fill="none" stroke="#0b63e5" stroke-width="3"/><circle cx="57" cy="48" r="13" fill="none" stroke="#0b63e5" stroke-width="3"/><text x="57" y="86" text-anchor="middle" class="h">MES Service</text><text x="57" y="109" text-anchor="middle" class="small">Service C</text></g>
+    <text x="835" y="34" class="h">4. Query</text><line x1="808" y1="52" x2="892" y2="52" class="flow"/>
+    <g transform="translate(906 0)"><rect width="114" height="120" rx="12" class="cardPurple"/><ellipse cx="57" cy="30" rx="18" ry="8" fill="none" stroke="#5b21b6" stroke-width="3"/><path d="M39 30v42c0 5 36 5 36 0V30" fill="none" stroke="#5b21b6" stroke-width="3"/><path d="M39 51c0 5 36 5 36 0" stroke="#5b21b6" stroke-width="2"/><text x="57" y="86" text-anchor="middle" class="hp">Database</text><text x="57" y="109" text-anchor="middle" class="small">Service D</text></g>
+    <text x="1064" y="34" class="h">5. Call</text><line x1="1034" y1="52" x2="1118" y2="52" class="flow"/>
+  </g>
+
+  <g transform="translate(1030 144)"><rect width="128" height="120" rx="12" class="cardPurple"/><path d="M39 58c-18-2-18-33 2-31 9-22 44-17 46 7 20 1 21 32-1 32H39" fill="none" stroke="#5b21b6" stroke-width="4"/><text x="64" y="86" text-anchor="middle" class="hp">External API</text><text x="64" y="109" text-anchor="middle" class="small">Service E</text></g>
+
+  <rect x="28" y="282" width="74" height="25" rx="5" fill="#5b21b6"/><text x="65" y="300" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">TRACE ID</text>
+  <text x="28" y="327" font-family="Consolas,monospace" font-size="17" font-weight="700" fill="#6d35d5">4f2c9b7e8d1a4c3f</text>
+  <path d="M102 295H1160" stroke="#6d35d5" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#arrowPurple)"/>
+  <g fill="#6d35d5" stroke="#ede9fe" stroke-width="6"><circle cx="295" cy="295" r="9"/><circle cx="520" cy="295" r="9"/><circle cx="747" cy="295" r="9"/><circle cx="973" cy="295" r="9"/><circle cx="1150" cy="295" r="9"/></g>
+
+  <rect x="28" y="350" width="1144" height="265" rx="14" fill="#fff" stroke="#bfdbfe" stroke-width="2"/>
+  <text x="52" y="381" font-family="Arial" font-size="20" font-weight="700" fill="#5b21b6">TRACE TIMELINE</text>
+  <text x="980" y="381" font-family="Arial" font-size="18" font-weight="700" fill="#6d35d5">Total Trace Duration: 842 ms</text>
+  <g transform="translate(155 414)">
+    <g class="tiny" text-anchor="middle"><text x="0" y="0">0 ms</text><text x="95" y="0">100 ms</text><text x="190" y="0">200 ms</text><text x="285" y="0">300 ms</text><text x="380" y="0">400 ms</text><text x="475" y="0">500 ms</text><text x="570" y="0">600 ms</text><text x="665" y="0">700 ms</text><text x="760" y="0">800 ms</text><text x="855" y="0">900 ms</text></g>
+    <g><line x1="0" y1="12" x2="0" y2="210" class="axis"/><line x1="95" y1="12" x2="95" y2="210" class="axis"/><line x1="190" y1="12" x2="190" y2="210" class="axis"/><line x1="285" y1="12" x2="285" y2="210" class="axis"/><line x1="380" y1="12" x2="380" y2="210" class="axis"/><line x1="475" y1="12" x2="475" y2="210" class="axis"/><line x1="570" y1="12" x2="570" y2="210" class="axis"/><line x1="665" y1="12" x2="665" y2="210" class="axis"/><line x1="760" y1="12" x2="760" y2="210" class="axis"/><line x1="855" y1="12" x2="855" y2="210" class="axis"/></g>
+    <g font-family="Arial" font-size="13" font-weight="700" fill="#0b4bd8"><text x="-120" y="37">Web App</text><text x="-120" y="74">API Gateway</text><text x="-120" y="111">MES Service</text><text x="-120" y="148" fill="#5b21b6">Database</text><text x="-120" y="185" fill="#5b21b6">External API</text></g>
+    <rect x="0" y="24" width="114" height="16" rx="4" fill="url(#spanBlue)"/><text x="122" y="38" class="small">120 ms</text>
+    <rect x="114" y="61" width="95" height="16" rx="4" fill="url(#spanBlue)"/><text x="214" y="75" class="small">220 ms</text>
+    <rect x="209" y="98" width="285" height="16" rx="4" fill="url(#spanBlue)"/><text x="502" y="112" class="small">520 ms</text>
+    <rect x="494" y="135" width="133" height="16" rx="4" fill="url(#spanPurple)"/><text x="635" y="149" class="small">660 ms</text>
+    <rect x="627" y="172" width="173" height="16" rx="4" fill="url(#spanPurple)"/><text x="810" y="186" class="small">842 ms</text>
+  </g>
+  <g transform="translate(984 420)">
+    <rect width="160" height="158" rx="12" fill="#fff" stroke="#a78bfa"/>
+    <text x="80" y="25" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700" fill="#5b21b6">SPAN DURATION</text>
+    <text x="20" y="58" class="small" fill="#0b4bd8">Web App</text><text x="124" y="58" class="small" font-weight="700">120 ms</text>
+    <text x="20" y="86" class="small" fill="#0b4bd8">API Gateway</text><text x="124" y="86" class="small" font-weight="700">100 ms</text>
+    <text x="20" y="114" class="small" fill="#0b4bd8">MES Service</text><text x="124" y="114" class="small" font-weight="700">300 ms</text>
+    <text x="20" y="142" class="small" fill="#5b21b6">Database</text><text x="124" y="142" class="small" font-weight="700">140 ms</text>
+  </g>
+  <rect x="390" y="628" width="420" height="36" rx="10" fill="#fff" stroke="#cbd5e1"/><path d="M420 646h70" stroke="#6d35d5" stroke-width="3" stroke-dasharray="7 7"/><text x="510" y="651" class="small">Trace Context Propagation</text><rect x="650" y="638" width="70" height="12" rx="5" fill="url(#spanBlue)"/><text x="740" y="651" class="small">Span Duration</text>
+</svg>

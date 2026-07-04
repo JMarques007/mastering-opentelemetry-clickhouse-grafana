@@ -22,3 +22,12 @@ Every module has an initial overview illustration under its `images/` folder. Th
 | 12 | Alerting | Planned | [overview.svg](module-12-alerting/images/overview.svg) |
 | 13 | Best Practices | Planned | [overview.svg](module-13-best-practices/images/overview.svg) |
 | 14 | Production Case Study | Planned | [overview.svg](module-14-production-case-study/images/overview.svg) |
+
+## Module 01 illustration set
+
+Module 01 also includes SVG versions of the richer training images from the reference package:
+
+- [observability-overview.svg](module-01-introduction-to-observability/images/observability-overview.svg)
+- [logs-metrics-traces.svg](module-01-introduction-to-observability/images/logs-metrics-traces.svg)
+- [distributed-tracing.svg](module-01-introduction-to-observability/images/distributed-tracing.svg)
+- [telemetry-correlation.svg](module-01-introduction-to-observability/images/telemetry-correlation.svg)

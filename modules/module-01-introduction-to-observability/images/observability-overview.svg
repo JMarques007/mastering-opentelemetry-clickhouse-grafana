@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Observability overview</title>
+  <desc id="desc">Applications and services emit telemetry that helps teams observe, understand and improve production systems.</desc>
+  <defs>
+    <linearGradient id="bluePanel" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0b4bd8"/><stop offset="1" stop-color="#06246f"/></linearGradient>
+    <linearGradient id="softBlue" x1="0" x2="1"><stop stop-color="#eff6ff"/><stop offset="1" stop-color="#dbeafe"/></linearGradient>
+    <linearGradient id="signal" x1="0" x2="1"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.18"/></filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#2563eb"/></marker>
+    <style>
+      .h1{font:700 42px Arial,sans-serif;fill:#06164f}.body{font:500 18px Arial,sans-serif;fill:#344267}.label{font:700 22px Arial,sans-serif;fill:#0b4bd8}.small{font:500 15px Arial,sans-serif;fill:#475569}.card{fill:#fff;stroke:#bfdbfe;stroke-width:2}.line{fill:none;stroke:#2563eb;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.dash{fill:none;stroke:#60a5fa;stroke-width:4;stroke-dasharray:7 9;stroke-linecap:round}
+    </style>
+  </defs>
+  <rect width="1200" height="675" fill="#f8fbff"/>
+  <path d="M0 0h760c-48 62-70 139-66 230 8 176-74 286-246 332-131 35-277 51-448 51z" fill="#eef5ff"/>
+  <path d="M730 0h470v675H720c80-80 123-181 128-302C854 218 816 93 730 0z" fill="url(#bluePanel)"/>
+  <text x="58" y="75" class="h1">Observability Overview</text>
+  <text x="58" y="112" class="body">Telemetry turns production behavior into evidence for better decisions.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="150" y="263" width="96" height="145" rx="18" class="card"/>
+    <path d="M179 338h38m-31-16 13-13 13 13" class="line"/>
+    <text x="198" y="382" text-anchor="middle" class="label">API</text>
+  </g>
+
+  <g class="small" text-anchor="middle">
+    <circle cx="70" cy="220" r="37" fill="#fff" stroke="#dbeafe" stroke-width="2"/><text x="70" y="226">User</text>
+    <circle cx="70" cy="315" r="37" fill="#fff" stroke="#dbeafe" stroke-width="2"/><text x="70" y="321">MES</text>
+    <circle cx="70" cy="410" r="37" fill="#fff" stroke="#dbeafe" stroke-width="2"/><text x="70" y="416">Device</text>
+  </g>
+  <path d="M107 220h58q22 0 22 22v21" class="line" marker-end="url(#arrow)"/>
+  <path d="M107 315h43q24 0 24 24v16" class="line" marker-end="url(#arrow)"/>
+  <path d="M107 410h58q22 0 22-22v-20" class="line" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect x="335" y="170" width="360" height="365" rx="32" fill="url(#softBlue)" opacity=".9"/>
+    <rect x="420" y="130" width="64" height="72" rx="18" fill="#0b63e5"/><ellipse cx="452" cy="130" rx="32" ry="12" fill="#3b82f6"/>
+    <rect x="420" y="480" width="64" height="72" rx="18" fill="#0b63e5"/><ellipse cx="452" cy="480" rx="32" ry="12" fill="#3b82f6"/>
+    <rect x="570" y="480" width="64" height="72" rx="18" fill="#7c3aed"/><ellipse cx="602" cy="480" rx="32" ry="12" fill="#8b5cf6"/>
+    <rect x="368" y="235" width="82" height="82" rx="15" class="card"/><path d="M409 253l31 18v36l-31 18-31-18v-36z" fill="#1473e6"/><path d="M379 271l30 17 30-17" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+    <rect x="512" y="235" width="82" height="82" rx="15" class="card"/><path d="M553 253l31 18v36l-31 18-31-18v-36z" fill="#7c3aed"/><path d="M523 271l30 17 30-17" fill="none" stroke="#ddd6fe" stroke-width="3"/>
+    <rect x="410" y="352" width="82" height="82" rx="15" class="card"/><path d="M451 370l31 18v36l-31 18-31-18v-36z" fill="#1473e6"/><path d="M421 388l30 17 30-17" fill="none" stroke="#bfdbfe" stroke-width="3"/>
+    <rect x="545" y="352" width="82" height="82" rx="15" class="card"/><path d="M586 370l31 18v36l-31 18-31-18v-36z" fill="#7c3aed"/><path d="M556 388l30 17 30-17" fill="none" stroke="#ddd6fe" stroke-width="3"/>
+  </g>
+  <path d="M246 335h120m84-160v60m0 82v35m0 82v46m102-245v82m-60 76h53m-95-117h62m-102 117h-90q-26 0-26-26v-83q0-26 26-26h48" class="line"/>
+  <path d="M450 276h62m-20 117h53m-95 0h-84q-26 0-26-26v-58" class="dash"/>
+
+  <g filter="url(#shadow)">
+    <circle cx="735" cy="315" r="58" fill="#fff"/><circle cx="735" cy="315" r="45" fill="url(#signal)"/>
+    <path d="M713 328h13l8-28 14 42 10-27h18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="956" cy="335" r="88" fill="#fff"/><circle cx="956" cy="335" r="65" fill="#0b4bd8"/><path d="M921 369h15v-38h15v38h15v-58h15v58h15" fill="none" stroke="#fff" stroke-width="7"/><circle cx="985" cy="320" r="21" fill="none" stroke="#fff" stroke-width="7"/><path d="M1002 337l24 24" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="M627 337c55 0 63-24 107-22" stroke="url(#signal)" stroke-width="16" fill="none" stroke-linecap="round" opacity=".55"/>
+  <path d="M793 315c52 0 79 20 110 20" stroke="url(#signal)" stroke-width="16" fill="none" stroke-linecap="round" opacity=".55"/>
+
+  <g filter="url(#shadow)">
+    <rect x="1010" y="150" width="170" height="84" rx="18" fill="#ffffff" opacity=".92"/><text x="1040" y="200" class="label" fill="#08256f">Observe</text>
+    <rect x="1010" y="296" width="170" height="84" rx="18" fill="#ffffff" opacity=".92"/><text x="1030" y="346" class="label" fill="#08256f">Understand</text>
+    <rect x="1010" y="442" width="170" height="84" rx="18" fill="#ffffff" opacity=".92"/><text x="1040" y="492" class="label" fill="#08256f">Improve</text>
+  </g>
+  <path d="M1010 192h-28q-20 0-20 20v36m48 90h-48m48 146h-28q-20 0-20-20v-43" fill="none" stroke="#67e8f9" stroke-width="4"/>
+</svg>

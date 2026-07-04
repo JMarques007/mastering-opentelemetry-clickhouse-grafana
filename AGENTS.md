@@ -1,108 +1,114 @@
 # Codex Agent Instructions
 
-This repository contains the source material for the course **Mastering OpenTelemetry, ClickHouse & Grafana**.
+This repository contains the source material for **Mastering OpenTelemetry, ClickHouse & Grafana**.
 
-Codex should act as a technical author, course designer and observability architect.
+Codex should work as a technical author, course designer and observability architect. The goal is to produce professional training material that can be used for real workshops, internal enablement and book-style documentation.
 
-## Primary Goal
+## Operating Principles
 
-Continuously improve the course material by producing professional training content, not placeholders.
-
-Every change should add meaningful value to the repository.
+- Add meaningful course value in every change.
+- Prefer complete, teachable content over broad placeholder structure.
+- Keep Markdown as the source of truth for course material.
+- Follow `STYLE_GUIDE.md` for writing, labs, diagrams and slides.
+- Follow `ROADMAP.md` when choosing the next content area.
+- Keep module work consistent with `modules/TEMPLATE.md`.
+- Keep repository navigation updated when adding new modules or major assets.
 
 ## Current Priority
 
-1. Complete `modules/module-01-introduction-to-observability`.
-2. Complete `modules/module-02-opentelemetry-architecture`.
-3. Keep the repository structure consistent with `modules/_template`.
-4. Add official references at the end of every module.
-5. Prefer high-quality documentation over superficial breadth.
+1. Complete Module 01: Introduction to Observability.
+2. Bring Module 02: OpenTelemetry Architecture to the same quality level.
+3. Add official references to every module.
+4. Add labs and examples that can be reproduced from a clean checkout.
+5. Prepare concise slide outlines only after the module narrative is strong.
+
+## Repository Paths
+
+- `README.md` is the project entry point.
+- `ROADMAP.md` tracks phases and course planning.
+- `STYLE_GUIDE.md` defines writing and asset conventions.
+- `modules/` contains course source material.
+- `modules/TEMPLATE.md` is the canonical module template.
+- `diagrams/` stores shared editable and exported diagrams.
+- `examples/` stores reusable configuration and code examples.
+- `labs/` stores hands-on exercises.
+- `slides/` stores slide templates and shared decks.
+- `website/` stores initial GitHub Pages content.
+- `codex/tasks.md` tracks the immediate Codex backlog.
 
 ## Content Quality Rules
 
 - Write in clear professional English.
-- Use a book-style narrative, not only bullet points.
-- Explain **why** a concept exists before explaining **how** it works.
-- Keep the content vendor-neutral, but compatible with OpenTelemetry, ClickHouse and Grafana.
-- Use production-oriented examples.
-- Avoid generic filler text.
+- Use a book-style narrative, not only bullet lists.
+- Explain why a concept exists before explaining how it works.
+- Keep the course vendor-neutral while remaining compatible with OpenTelemetry, ClickHouse and Grafana.
+- Use production-oriented examples and operational trade-offs.
+- Avoid generic filler, empty sections and unfinished TODO prose.
 - Do not add empty files unless they are `.gitkeep` files required to preserve folders.
 
 ## Module Definition of Done
 
-A module is complete only when it contains:
+A module is ready for review when it includes:
 
-- `README.md`
-- `module.md`
-- `quiz.md`
-- `references.md`
-- `slides/`
-- `diagrams/`
-- `examples/`
-- `labs/`
-- `images/`
+- `README.md` with a concise module entry point.
+- `module.md` with the full teaching narrative.
+- `quiz.md` with review questions and answers.
+- `references.md` with official sources.
+- At least one lab or exercise when the subject is practical.
+- Diagrams or Mermaid sketches when architecture or flow is involved.
+- Any examples required to make the lab reproducible.
 
-The module documentation must include:
+The module documentation should cover:
 
-- Overview
-- Learning Objectives
-- Prerequisites
-- Main Content
-- Best Practices
-- Common Mistakes
-- Lab or Exercise
-- Summary
-- Key Takeaways
-- Quiz
-- Official References
-- Next Module
-
-## Preferred Module Style
-
-Each module should be suitable for a 1-hour training session.
-
-Documentation should be detailed enough to stand alone, while slides should remain visual and concise.
+- overview;
+- learning objectives;
+- prerequisites;
+- key concepts;
+- architecture or flow;
+- best practices;
+- common mistakes;
+- lab or exercise;
+- summary;
+- key takeaways;
+- review questions;
+- official references;
+- next module.
 
 ## Diagram Rules
 
-- Prefer editable diagrams as source material.
-- Use Mermaid diagrams when PowerPoint or Draw.io files cannot be produced directly.
-- Exportable diagrams should be stored in each module's `diagrams/` folder.
-- Avoid generated images for technical architecture diagrams.
-- Use a few supporting images only when they improve readability.
+- Prefer editable diagram sources.
+- Use Mermaid when a native editable diagram cannot be produced directly.
+- Store module-specific diagrams inside that module when possible.
+- Store shared diagrams in `diagrams/`.
+- Avoid generated raster images for technical architecture diagrams.
 
 ## References
 
-Use official references only, such as:
+Prefer official sources, including:
 
-- OpenTelemetry documentation
-- OpenTelemetry specification
-- CNCF documentation
-- Grafana documentation
-- ClickHouse documentation
-- Prometheus documentation
-- Kubernetes documentation
-- W3C Trace Context documentation
+- OpenTelemetry documentation and specification;
+- CNCF documentation;
+- Grafana documentation;
+- ClickHouse documentation;
+- Prometheus documentation;
+- Kubernetes documentation;
+- W3C Trace Context documentation.
 
-Avoid random blog posts unless explicitly requested.
+Use third-party blog posts only when explicitly requested or clearly justified.
 
-## Commit Guidelines
+## Commit and PR Guidelines
 
-Use meaningful commits.
+Use focused branches and meaningful commit messages. Examples:
 
-Examples:
+- `docs(module-01): add observability introduction narrative`
+- `docs(module-02): expand OpenTelemetry architecture`
+- `diagrams(module-02): add telemetry flow diagram`
+- `labs(module-02): add OTLP collector exercise`
 
-- `docs(module-01): add complete introduction to observability`
-- `docs(module-02): expand OpenTelemetry architecture narrative`
-- `diagrams(module-02): add telemetry flow diagrams`
-- `labs(module-02): add OTLP collector lab`
+Before finishing, verify that:
 
-## Review Checklist
-
-Before finishing a task, verify:
-
-- The content is useful for a real training session.
-- The module reads like professional course material.
-- There are no placeholders left unintentionally.
-- References are official and relevant.
-- The structure matches the style guide.
+- changed links resolve inside the repository;
+- new content follows `STYLE_GUIDE.md`;
+- module structure follows `modules/TEMPLATE.md`;
+- references are official and relevant;
+- no accidental placeholders remain.

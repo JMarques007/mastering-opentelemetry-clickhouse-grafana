@@ -27,6 +27,10 @@ The goal is to provide professional, reusable training material that can be used
 
 ## Start Here
 
+- [Course Bible](docs/COURSE_BIBLE.md) - canonical editorial, technical and teaching standard.
+- [Gold Standard Module](docs/GOLD_STANDARD_MODULE.md) - practical model for high-quality module writing.
+- [Course Checklist](docs/COURSE_CHECKLIST.md) - checklist before modules are considered ready for review or release.
+- [Bad Writing Examples](docs/BAD_WRITING_EXAMPLES.md) - weak writing patterns to avoid.
 - [Workshop delivery plan](docs/workshop-delivery-plan.md) - one-day, two-day and self-paced delivery paths.
 - [Lab index](docs/lab-index.md) - lab execution order, shared environment and payload inventory.
 - [Local lab troubleshooting](docs/local-lab-troubleshooting.md) - common Docker, Collector and ClickHouse fixes.
@@ -86,6 +90,7 @@ scripts/      Automation scripts
 ## Working Principles
 
 - Markdown is the primary source for documentation.
+- Course content follows the [Course Bible](docs/COURSE_BIBLE.md).
 - Slides should be visual, concise, and supported by speaker notes where possible.
 - Diagrams should be editable whenever possible.
 - Images are used sparingly and only when they add value.
@@ -93,4 +98,4 @@ scripts/      Automation scripts
 
 ## Current Focus
 
-The current priority is reviewing and refining the full set of draft modules into polished teaching material, then validating the labs and delivery assets before a workshop release.
+The current priority is aligning the existing draft modules with the Course Bible and Gold Standard Module guidance, then validating each module against the Course Checklist before marking it ready for review.

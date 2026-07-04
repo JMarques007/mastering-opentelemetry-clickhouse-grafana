@@ -19,6 +19,7 @@ This module explains why ClickHouse fits analytical telemetry workloads and how 
 
 - [Module narrative](module.md)
 - [Exercise - Trace span table design](exercise.md)
+- [Lab - ClickHouse observability query workbook](../../labs/module-09-clickhouse-query-workbook.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

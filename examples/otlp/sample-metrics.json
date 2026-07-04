@@ -1,0 +1,99 @@
+{
+  "resourceMetrics": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": { "stringValue": "checkout-api" }
+          },
+          {
+            "key": "deployment.environment",
+            "value": { "stringValue": "local-lab" }
+          }
+        ]
+      },
+      "scopeMetrics": [
+        {
+          "scope": {
+            "name": "course.manual-otlp",
+            "version": "1.0.0"
+          },
+          "metrics": [
+            {
+              "name": "checkout.requests",
+              "description": "Total checkout requests observed by the lab payload.",
+              "unit": "1",
+              "sum": {
+                "aggregationTemporality": 2,
+                "isMonotonic": true,
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "http.route",
+                        "value": { "stringValue": "/checkout" }
+                      },
+                      {
+                        "key": "http.response.status_code",
+                        "value": { "intValue": "200" }
+                      }
+                    ],
+                    "startTimeUnixNano": "1735689600000000000",
+                    "timeUnixNano": "1735689660000000000",
+                    "asInt": "42"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "checkout.queue_depth",
+              "description": "Current checkout queue depth.",
+              "unit": "1",
+              "gauge": {
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "queue.name",
+                        "value": { "stringValue": "payment-authorizations" }
+                      }
+                    ],
+                    "timeUnixNano": "1735689660000000000",
+                    "asInt": "7"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "checkout.duration",
+              "description": "Checkout request duration distribution.",
+              "unit": "s",
+              "histogram": {
+                "aggregationTemporality": 2,
+                "dataPoints": [
+                  {
+                    "attributes": [
+                      {
+                        "key": "http.route",
+                        "value": { "stringValue": "/checkout" }
+                      }
+                    ],
+                    "startTimeUnixNano": "1735689600000000000",
+                    "timeUnixNano": "1735689660000000000",
+                    "count": "5",
+                    "sum": 2.36,
+                    "bucketCounts": ["1", "2", "2"],
+                    "explicitBounds": [0.1, 0.5],
+                    "min": 0.08,
+                    "max": 0.84
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

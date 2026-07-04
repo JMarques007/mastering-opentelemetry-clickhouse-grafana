@@ -19,6 +19,7 @@ This module explains metrics as numerical time-series evidence for trends, dashb
 
 - [Module narrative](module.md)
 - [Exercise - Checkout metric design](exercise.md)
+- [Lab - OTLP metrics payloads](../../labs/module-05-metrics-otlp-payloads.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

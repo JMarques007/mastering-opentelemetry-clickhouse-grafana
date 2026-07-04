@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 10 - Grafana</title>
+  <desc id="desc">Illustration of Grafana querying telemetry sources and presenting panels.</desc>
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">Grafana</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Exploring, visualizing and sharing telemetry insight</text>
+  <rect x="140" y="255" width="250" height="280" rx="18" fill="#eef2ff" stroke="#4f46e5" stroke-width="4"/>
+  <text x="265" y="315" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#3730a3">Data Sources</text>
+  <text x="265" y="360" text-anchor="middle" font-family="Arial" font-size="19" fill="#4338ca">ClickHouse</text><text x="265" y="400" text-anchor="middle" font-family="Arial" font-size="19" fill="#4338ca">Prometheus</text><text x="265" y="440" text-anchor="middle" font-family="Arial" font-size="19" fill="#4338ca">Loki Tempo</text>
+  <path d="M390 395 H505" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="505" y="245" width="525" height="300" rx="20" fill="#fff7ed" stroke="#ea580c" stroke-width="4"/>
+  <text x="768" y="295" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#9a3412">Dashboard</text>
+  <rect x="560" y="330" width="190" height="80" rx="10" fill="#fed7aa"/><rect x="790" y="330" width="190" height="80" rx="10" fill="#ffedd5"/><rect x="560" y="440" width="420" height="70" rx="10" fill="#fdba74"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111827"/></marker></defs>
+</svg>

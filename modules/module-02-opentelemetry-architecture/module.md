@@ -145,48 +145,25 @@ This allows organizations to support local analysis, central aggregation, long-t
 - Creating high-cardinality metric attributes.
 - Forgetting context propagation between services.
 
-## Lab
-
-Draw the OpenTelemetry architecture for a system with:
-
-- One frontend application.
-- Two backend APIs.
-- One database.
-- One OpenTelemetry Collector.
-- ClickHouse as the primary backend.
-- Grafana as the visualization layer.
-- Optional OTLP forwarding to another Collector.
-
-Then identify where telemetry is generated, where it is transported, where it is processed and where it is stored.
-
-![Architecture lab practice](images/lab-practice.svg)
-
 ## Operational investigation view
 
 When troubleshooting production issues, this architecture becomes a map. If telemetry is missing, the problem may be in instrumentation, SDK export, OTLP transport, Collector processing or backend ingestion. Engineers should be able to follow the path one stage at a time instead of treating observability as a black box.
 
 ![Architecture operations view](images/operations-view.svg)
 
-## Quiz
+## Practice assets
 
-1. Why does OpenTelemetry separate telemetry generation from storage and visualization?
-2. What role does the SDK play inside an application?
-3. What is OTLP used for?
-4. Why is the Collector strongly recommended in production?
-5. What problem can inconsistent service names create?
+The learner-facing practice material for this module is kept in dedicated files so it can be reused in workshops, self-study and slide delivery:
+
+- [Lab - Architecture mapping](lab.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 
 ## Summary
 
 OpenTelemetry provides the architecture and standards required to collect telemetry in a vendor-neutral way. Its main strength is the separation between instrumentation, transport, processing, storage and visualization.
 
 In this module we introduced the SDK, OTLP, the Collector, backends and Grafana. The next module will focus entirely on the OpenTelemetry Collector, which is one of the most important components in production observability architectures.
-
-## Official references
-
-- OpenTelemetry Documentation: https://opentelemetry.io/docs/
-- OpenTelemetry Specification: https://opentelemetry.io/docs/specs/otel/
-- OpenTelemetry Collector: https://opentelemetry.io/docs/collector/
-- OTLP Specification: https://opentelemetry.io/docs/specs/otlp/
 
 ## Next Module
 

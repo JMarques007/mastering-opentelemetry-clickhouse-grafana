@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 03 - OpenTelemetry Collector</title>
+  <desc id="desc">Illustration of Collector receivers, processors, exporters and telemetry backends.</desc>
+  <rect width="1200" height="675" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">OpenTelemetry Collector</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">A vendor-neutral telemetry processing pipeline</text>
+  <rect x="140" y="280" width="190" height="130" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="235" y="335" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1e3a8a">Receivers</text>
+  <text x="235" y="370" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">OTLP Prometheus</text>
+  <path d="M330 345 H445" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="445" y="250" width="270" height="190" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="580" y="325" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#14532d">Processors</text>
+  <text x="580" y="365" text-anchor="middle" font-family="Arial" font-size="18" fill="#166534">batch filter enrich sample</text>
+  <path d="M715 345 H830" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="830" y="280" width="210" height="130" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="935" y="335" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#78350f">Exporters</text>
+  <text x="935" y="370" text-anchor="middle" font-family="Arial" font-size="18" fill="#92400e">ClickHouse Grafana</text>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111827"/></marker></defs>
+</svg>

@@ -50,8 +50,8 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add a lab index and execution order guide.
 - [x] Add troubleshooting guide for local lab setup.
 - [x] Add module quality review checklist.
-- [ ] Add release readiness checklist for teaching delivery.
-- [ ] Update README navigation for delivery assets.
+- [x] Add release readiness checklist for teaching delivery.
+- [x] Update README navigation for delivery assets.
 
 ## Working Rules
 

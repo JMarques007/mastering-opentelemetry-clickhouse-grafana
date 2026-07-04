@@ -1,25 +1,34 @@
 # Module 04 - Logs
 
-This module explains logs as structured event evidence and shows how to make logs useful during production investigations.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Explain what logs are best suited for.
-- Distinguish useful structured logs from noisy text logs.
-- Understand severity, context and correlation identifiers.
-- Use logs with traces and metrics during troubleshooting.
+## Purpose
 
-## Main content
+This module teaches logs as structured event evidence that supports investigation, correlation and operational decision-making.
+
+## Main topics
+
+- Structured logging.
+- Severity and noise control.
+- Correlation with traces and metrics.
+- Privacy, retention and safe fields.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Structured log rewrite](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Log lifecycle workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-45 to 60 minutes.
+Draft available.
 
 ## Next module
 

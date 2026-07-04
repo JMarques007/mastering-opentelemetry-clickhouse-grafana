@@ -1,25 +1,34 @@
 # Module 05 - Metrics
 
-This module explains metrics as numerical signals over time and shows how to use them for health, trends, capacity and alerting.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Explain counters, gauges and histograms.
-- Understand rates, percentiles and aggregation.
-- Recognize cardinality risks.
-- Use metrics to support dashboards and SLO-style thinking.
+## Purpose
 
-## Main content
+This module explains metrics as numerical time-series evidence for trends, dashboards, alerting and service health.
+
+## Main topics
+
+- Counters, gauges and histograms.
+- Rates, percentiles and aggregation.
+- Labels and cardinality.
+- Metrics in production investigation.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Checkout metric design](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Metrics workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-45 to 60 minutes.
+Draft available.
 
 ## Next module
 

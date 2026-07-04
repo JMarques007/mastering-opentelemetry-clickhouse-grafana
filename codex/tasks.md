@@ -44,6 +44,15 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add Grafana dashboard starter JSON for checkout service health.
 - [x] Add alert rule examples for checkout error rate and latency.
 
+## Sprint 5 - Workshop Readiness
+
+- [x] Add final workshop delivery plan.
+- [ ] Add a lab index and execution order guide.
+- [ ] Add troubleshooting guide for local lab setup.
+- [ ] Add module quality review checklist.
+- [ ] Add release readiness checklist for teaching delivery.
+- [ ] Update README navigation for delivery assets.
+
 ## Working Rules
 
 - Do not only create structure; each execution should add meaningful content.

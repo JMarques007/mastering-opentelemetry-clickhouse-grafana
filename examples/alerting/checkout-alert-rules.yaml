@@ -1,0 +1,113 @@
+# Course alert rule examples for checkout service health.
+# This file is intentionally platform-neutral. Adapt the query, condition and labels
+# to Grafana Alerting, Prometheus-style rules or your internal alert manager.
+
+alert_rules:
+  - id: checkout-error-spans-high
+    title: Checkout error spans are elevated
+    purpose: Page the checkout owner when failed checkout spans indicate user-impacting errors.
+    signal: traces
+    datasource: clickhouse
+    query: |
+      SELECT count() AS error_spans
+      FROM otel_traces
+      WHERE ServiceName = 'checkout-api'
+        AND StatusCode = 'Error'
+        AND Timestamp >= NOW() - INTERVAL 5 MINUTE
+    condition:
+      expression: error_spans > 5
+      evaluation_window: 5m
+      for: 2m
+    labels:
+      service: checkout-api
+      severity: page
+      owner: checkout-team
+      signal: traces
+    annotations:
+      summary: Checkout error spans are above the paging threshold.
+      description: Failed spans for checkout-api exceeded 5 in the last 5 minutes.
+      dashboard: Checkout Service Health
+      first_query: Search otel_traces for StatusCode='Error' and inspect matching TraceId values.
+      runbook: Check payment provider status, recent deployments and related error logs by TraceId.
+
+  - id: checkout-slow-spans-high
+    title: Checkout slow spans are elevated
+    purpose: Notify the checkout owner when slow checkout spans suggest degraded user experience.
+    signal: traces
+    datasource: clickhouse
+    query: |
+      SELECT count() AS slow_spans
+      FROM otel_traces
+      WHERE ServiceName = 'checkout-api'
+        AND Duration > 500 * 1000 * 1000
+        AND Timestamp >= NOW() - INTERVAL 10 MINUTE
+    condition:
+      expression: slow_spans > 10
+      evaluation_window: 10m
+      for: 5m
+    labels:
+      service: checkout-api
+      severity: warning
+      owner: checkout-team
+      signal: traces
+    annotations:
+      summary: Checkout has too many spans slower than 500 ms.
+      description: More than 10 checkout-api spans exceeded 500 ms in the last 10 minutes.
+      dashboard: Checkout Service Health
+      first_query: Sort otel_traces by Duration descending and inspect SpanName, StatusCode and SpanAttributes.
+      runbook: Compare slow spans with dependency health, queue depth and recent deployment events.
+
+  - id: checkout-payment-timeout-logs
+    title: Checkout payment provider timeouts detected
+    purpose: Notify the checkout owner when structured logs confirm payment provider timeout symptoms.
+    signal: logs
+    datasource: clickhouse
+    query: |
+      SELECT count() AS timeout_logs
+      FROM otel_logs
+      WHERE ServiceName = 'checkout-api'
+        AND SeverityText IN ('ERROR', 'FATAL')
+        AND LogAttributes['failure.reason'] = 'timeout'
+        AND LogAttributes['payment.provider'] != ''
+        AND Timestamp >= NOW() - INTERVAL 10 MINUTE
+    condition:
+      expression: timeout_logs > 3
+      evaluation_window: 10m
+      for: 2m
+    labels:
+      service: checkout-api
+      severity: page
+      owner: checkout-team
+      signal: logs
+    annotations:
+      summary: Payment provider timeout logs are elevated.
+      description: Structured checkout logs show repeated payment provider timeout failures.
+      dashboard: Checkout Service Health
+      first_query: Query otel_logs by TraceId, payment.provider and failure.reason.
+      runbook: Validate provider status, retry behavior and fallback provider availability.
+
+  - id: checkout-queue-depth-high
+    title: Checkout queue depth is high
+    purpose: Warn the checkout owner before queue saturation becomes customer-visible.
+    signal: metrics
+    datasource: clickhouse
+    query: |
+      SELECT max(Value) AS max_queue_depth
+      FROM otel_metrics_gauge
+      WHERE MetricName = 'checkout.queue_depth'
+        AND TimeUnix >= NOW() - INTERVAL 5 MINUTE
+    condition:
+      expression: max_queue_depth > 25
+      evaluation_window: 5m
+      for: 5m
+    labels:
+      service: checkout-api
+      severity: warning
+      owner: checkout-team
+      signal: metrics
+    annotations:
+      summary: Checkout queue depth is above the warning threshold.
+      description: The checkout queue depth gauge exceeded 25 for at least 5 minutes.
+      dashboard: Checkout Service Health
+      first_query: Query otel_metrics_gauge for checkout.queue_depth and compare with slow spans.
+      runbook: Check worker health, downstream provider latency and recent traffic changes.

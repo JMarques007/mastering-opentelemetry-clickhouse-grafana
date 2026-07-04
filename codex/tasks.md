@@ -53,6 +53,15 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add release readiness checklist for teaching delivery.
 - [x] Update README navigation for delivery assets.
 
+## Sprint 6 - Course Bible Alignment
+
+- [x] Promote Course Bible, Checklist, Gold Standard and Bad Writing docs in README and AGENTS.
+- [ ] Audit Module 01 against the Course Bible and Gold Standard Module.
+- [ ] Upgrade Module 01 to include required teaching blocks and interview questions.
+- [ ] Audit Module 02 against the Course Bible and Gold Standard Module.
+- [ ] Upgrade Module 02 to include required teaching blocks and interview questions.
+- [ ] Create a repeatable module alignment checklist for Modules 03-14.
+
 ## Working Rules
 
 - Do not only create structure; each execution should add meaningful content.

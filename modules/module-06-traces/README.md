@@ -19,6 +19,7 @@ This module teaches distributed traces as request-level evidence for causality, 
 
 - [Module narrative](module.md)
 - [Exercise - Slow trace investigation](exercise.md)
+- [Lab - Trace and log correlation](../../labs/module-06-trace-log-correlation.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

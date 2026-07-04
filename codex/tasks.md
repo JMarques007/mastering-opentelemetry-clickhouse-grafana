@@ -45,6 +45,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 ## Sprint 3 - Teaching Assets
 
 - [x] Add initial overview SVG illustrations for all 14 modules.
+- [x] Add richer editable SVG training image packs for Modules 02 through 14.
 - [ ] Add a shared slide outline for Module 01.
 - [ ] Add a shared slide outline for Module 02.
 - [ ] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.

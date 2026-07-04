@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 02 - OpenTelemetry Architecture</title>
+  <desc id="desc">Illustration of application instrumentation, SDKs, OTLP and the Collector.</desc>
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial, sans-serif" font-size="42" font-weight="700" fill="#111827">OpenTelemetry Architecture</text>
+  <text x="110" y="185" font-family="Arial, sans-serif" font-size="22" fill="#4b5563">APIs, SDKs, OTLP and the Collector pipeline</text>
+  <rect x="130" y="275" width="190" height="120" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="225" y="325" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#1e3a8a">App Code</text>
+  <text x="225" y="360" text-anchor="middle" font-family="Arial" font-size="18" fill="#1d4ed8">instrumented</text>
+  <path d="M320 335 H430" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="430" y="275" width="190" height="120" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="4"/>
+  <text x="525" y="325" text-anchor="middle" font-family="Arial" font-size="26" font-weight="700" fill="#4c1d95">SDK</text>
+  <text x="525" y="360" text-anchor="middle" font-family="Arial" font-size="18" fill="#5b21b6">process signals</text>
+  <path d="M620 335 H730" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="730" y="245" width="210" height="180" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="835" y="318" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#14532d">Collector</text>
+  <text x="835" y="355" text-anchor="middle" font-family="Arial" font-size="18" fill="#166534">receive process export</text>
+  <path d="M940 335 H1045" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="1045" y="280" width="55" height="110" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="1072" y="345" text-anchor="middle" font-family="Arial" font-size="16" font-weight="700" fill="#78350f">Backend</text>
+  <text x="675" y="235" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#374151">OTLP</text>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#111827"/></marker></defs>
+</svg>

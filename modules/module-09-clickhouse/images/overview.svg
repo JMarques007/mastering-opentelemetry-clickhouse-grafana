@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 09 - ClickHouse</title>
+  <desc id="desc">Illustration of columnar telemetry storage and fast analytical queries.</desc>
+  <rect width="1200" height="675" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">ClickHouse</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Columnar analytics for high-volume observability data</text>
+  <g transform="translate(185 250)">
+    <rect x="0" y="0" width="650" height="260" rx="18" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+    <text x="325" y="50" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#78350f">Telemetry Table</text>
+    <rect x="70" y="90" width="80" height="130" fill="#fbbf24"/><rect x="190" y="90" width="80" height="130" fill="#f59e0b"/><rect x="310" y="90" width="80" height="130" fill="#d97706"/><rect x="430" y="90" width="80" height="130" fill="#92400e"/>
+    <text x="110" y="245" text-anchor="middle" font-family="Arial" font-size="16" fill="#78350f">time</text><text x="230" y="245" text-anchor="middle" font-family="Arial" font-size="16" fill="#78350f">service</text><text x="350" y="245" text-anchor="middle" font-family="Arial" font-size="16" fill="#78350f">trace</text><text x="470" y="245" text-anchor="middle" font-family="Arial" font-size="16" fill="#78350f">metric</text>
+  </g>
+  <path d="M850 380 H1010" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <text x="935" y="345" text-anchor="middle" font-family="Arial" font-size="23" font-weight="700" fill="#374151">fast queries</text>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111827"/></marker></defs>
+</svg>

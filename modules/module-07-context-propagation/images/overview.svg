@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 07 - Context Propagation</title>
+  <desc id="desc">Illustration of trace context moving through services.</desc>
+  <rect width="1200" height="675" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">Context Propagation</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Carrying trace identity across process and network boundaries</text>
+  <rect x="145" y="305" width="180" height="105" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="4"/>
+  <text x="235" y="368" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#1e3a8a">Service A</text>
+  <rect x="510" y="305" width="180" height="105" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="4"/>
+  <text x="600" y="368" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#14532d">Service B</text>
+  <rect x="875" y="305" width="180" height="105" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="4"/>
+  <text x="965" y="368" text-anchor="middle" font-family="Arial" font-size="25" font-weight="700" fill="#78350f">Service C</text>
+  <path d="M325 357 H510" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <path d="M690 357 H875" stroke="#111827" stroke-width="5" marker-end="url(#arrow)"/>
+  <rect x="370" y="245" width="460" height="52" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="3"/>
+  <text x="600" y="279" text-anchor="middle" font-family="Consolas, monospace" font-size="20" fill="#3730a3">traceparent: 00-4bf92f...</text>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#111827"/></marker></defs>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 11 - Dashboards</title>
+  <desc id="desc">Illustration of a dashboard organized around service health and investigation.</desc>
+  <rect width="1200" height="675" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">Dashboards</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Designing screens that answer operational questions quickly</text>
+  <rect x="150" y="245" width="900" height="300" rx="18" fill="#111827"/>
+  <rect x="190" y="290" width="190" height="90" rx="10" fill="#dcfce7"/><rect x="410" y="290" width="190" height="90" rx="10" fill="#dbeafe"/><rect x="630" y="290" width="190" height="90" rx="10" fill="#fef3c7"/><rect x="850" y="290" width="150" height="90" rx="10" fill="#fee2e2"/>
+  <polyline points="200,485 300,455 400,470 500,420 600,435 700,390 800,410 985,365" fill="none" stroke="#60a5fa" stroke-width="7" stroke-linecap="round"/>
+  <text x="285" y="343" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#14532d">Health</text><text x="505" y="343" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#1e3a8a">Latency</text><text x="725" y="343" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#78350f">Errors</text><text x="925" y="343" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700" fill="#991b1b">Alerts</text>
+</svg>

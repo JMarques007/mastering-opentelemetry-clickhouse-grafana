@@ -22,6 +22,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [ ] Add `module.md` with a complete book-style narrative.
 - [ ] Cover the difference between logs, metrics and traces.
 - [ ] Explain symptoms, signals, telemetry and observability in production terms.
+- [x] Add an initial overview SVG illustration.
 - [ ] Add a Mermaid diagram for the observability feedback loop.
 - [ ] Add `quiz.md` with questions and answer key.
 - [ ] Add `references.md` with official sources.
@@ -34,6 +35,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [ ] Add or expand `module.md` to match Module 01 quality.
 - [ ] Explain APIs, SDKs, instrumentation libraries, exporters and the Collector.
 - [ ] Explain OTLP and the logs, metrics and traces signal model.
+- [x] Add an initial overview SVG illustration.
 - [ ] Add a Mermaid architecture diagram for telemetry flow.
 - [ ] Add one Collector-oriented lab.
 - [ ] Add reusable example configuration under `examples/` or the module folder.
@@ -42,6 +44,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 
 ## Sprint 3 - Teaching Assets
 
+- [x] Add initial overview SVG illustrations for all 14 modules.
 - [ ] Add a shared slide outline for Module 01.
 - [ ] Add a shared slide outline for Module 02.
 - [ ] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.

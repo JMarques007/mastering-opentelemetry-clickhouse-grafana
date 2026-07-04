@@ -34,6 +34,16 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.
 - [x] Add instructor notes for timing, demos and discussion prompts.
 
+## Sprint 4 - Reproducible Labs and Examples
+
+- [x] Add a Collector to ClickHouse Docker Compose lab for Module 03.
+- [ ] Add a logs ingestion lab with structured OTLP log payloads.
+- [ ] Add a metrics lab with counter, gauge and histogram payloads.
+- [ ] Add a trace correlation lab that links trace ids to logs.
+- [ ] Add ClickHouse SQL query examples for common observability investigations.
+- [ ] Add Grafana dashboard starter JSON for checkout service health.
+- [ ] Add alert rule examples for checkout error rate and latency.
+
 ## Working Rules
 
 - Do not only create structure; each execution should add meaningful content.

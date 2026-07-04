@@ -30,9 +30,9 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
   - [x] Modules 03-08 dedicated `exercise.md`, `quiz.md` and `references.md` files.
   - [x] Modules 09-14 dedicated `exercise.md`, `quiz.md` and `references.md` files.
 - [x] Add a shared slide outline for Module 01.
-- [ ] Add a shared slide outline for Module 02.
-- [ ] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.
-- [ ] Add instructor notes for timing, demos and discussion prompts.
+- [x] Add a shared slide outline for Module 02.
+- [x] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.
+- [x] Add instructor notes for timing, demos and discussion prompts.
 
 ## Working Rules
 

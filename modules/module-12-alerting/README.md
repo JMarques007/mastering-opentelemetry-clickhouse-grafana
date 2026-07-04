@@ -1,25 +1,34 @@
 # Module 12 - Alerting
 
-This module explains alerting as an operational response system built from symptoms, ownership, routing and runbooks.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Distinguish actionable alerts from noisy notifications.
-- Design alert rules around user impact and ownership.
-- Understand routing, severity and escalation.
-- Review alerts for fatigue and missed incidents.
+## Purpose
 
-## Main content
+This module teaches alerting as a request for human action, with emphasis on ownership, routing, context and runbooks.
+
+## Main topics
+
+- Actionable alert design.
+- Rule windows, thresholds and severity.
+- Routing and escalation.
+- Alert review and noise reduction.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Checkout error-rate alert](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Alerting workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-45 to 60 minutes.
+Draft available.
 
 ## Next module
 

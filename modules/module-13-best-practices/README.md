@@ -1,25 +1,34 @@
 # Module 13 - Best Practices
 
-This module consolidates observability best practices for signal quality, cost control, privacy, governance and production reliability.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Review telemetry for usefulness and safety.
-- Control cost through sampling, filtering and retention.
-- Apply ownership and governance to observability assets.
-- Avoid common anti-patterns.
+## Purpose
 
-## Main content
+This module consolidates observability practices around useful signals, cost control, privacy, ownership and review.
+
+## Main topics
+
+- Designing from operational questions.
+- Signal quality.
+- Cost and cardinality control.
+- Privacy, governance and ownership.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Telemetry design audit](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Best practices workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-60 minutes.
+Draft available.
 
 ## Next module
 

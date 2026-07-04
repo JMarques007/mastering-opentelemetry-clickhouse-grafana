@@ -11,19 +11,19 @@ The goal is to provide professional, reusable training material that can be used
 | Module | Title | Status |
 |---:|---|---|
 | 01 | Introduction to Observability | ✅ Draft available |
-| 02 | OpenTelemetry Architecture | 🚧 In progress |
-| 03 | OpenTelemetry Collector | ⏳ Planned |
-| 04 | Logs | ⏳ Planned |
-| 05 | Metrics | ⏳ Planned |
-| 06 | Traces | ⏳ Planned |
-| 07 | Context Propagation | ⏳ Planned |
-| 08 | Instrumentation | ⏳ Planned |
-| 09 | ClickHouse | ⏳ Planned |
-| 10 | Grafana | ⏳ Planned |
-| 11 | Dashboards | ⏳ Planned |
-| 12 | Alerting | ⏳ Planned |
-| 13 | Best Practices | ⏳ Planned |
-| 14 | Production Case Study | ⏳ Planned |
+| 02 | OpenTelemetry Architecture | ✅ Draft available |
+| 03 | OpenTelemetry Collector | ✅ Draft available |
+| 04 | Logs | ✅ Draft available |
+| 05 | Metrics | ✅ Draft available |
+| 06 | Traces | ✅ Draft available |
+| 07 | Context Propagation | ✅ Draft available |
+| 08 | Instrumentation | ✅ Draft available |
+| 09 | ClickHouse | ✅ Draft available |
+| 10 | Grafana | ✅ Draft available |
+| 11 | Dashboards | ✅ Draft available |
+| 12 | Alerting | ✅ Draft available |
+| 13 | Best Practices | ✅ Draft available |
+| 14 | Production Case Study | ✅ Draft available |
 
 ## Project Documents
 
@@ -56,4 +56,4 @@ scripts/      Automation scripts
 
 ## Current Focus
 
-The current priority is **Module 2 – OpenTelemetry Architecture**.
+The current priority is reviewing and refining the full set of draft modules into polished teaching material.

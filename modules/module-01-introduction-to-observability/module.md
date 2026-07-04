@@ -59,17 +59,13 @@ A simple observability investigation can follow this path:
 
 A common mistake is collecting data without knowing what question it answers. Another is adding logs that are technically correct but not actionable. Teams also frequently create dashboards that show many numbers but do not guide decisions. Observability should reduce uncertainty during incidents, not create more screens to inspect.
 
-## Exercise
+## Practice assets
 
-Use the telemetry correlation image and write a short investigation summary. Identify the first symptom, the most useful metric, the relevant trace span, the log message that confirms the cause and the action you would take next.
+The learner-facing practice material for this module is kept in dedicated files so it can be reused in workshops, self-study and slide delivery:
 
-## Quiz
-
-1. What is the difference between monitoring and observability?
-2. Which signal is best for showing long-term behavior over time?
-3. Why are trace ids useful in logs?
-4. What makes a log entry actionable?
-5. Why is a trace useful when a request crosses multiple services?
+- [Exercise - Investigation summary](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 
 ## Key takeaways
 
@@ -78,9 +74,6 @@ Use the telemetry correlation image and write a short investigation summary. Ide
 - Correlation is what turns separate signals into an investigation story.
 - OpenTelemetry provides a standard way to produce and transport telemetry.
 
-## Official references
+## Next module
 
-- OpenTelemetry Documentation: https://opentelemetry.io/docs/
-- OpenTelemetry Specification: https://opentelemetry.io/docs/specs/otel/
-- W3C Trace Context: https://www.w3.org/TR/trace-context/
-- Grafana Observability: https://grafana.com/docs/
+Continue with [Module 02 - OpenTelemetry Architecture](../module-02-opentelemetry-architecture/README.md).

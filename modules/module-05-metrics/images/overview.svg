@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 05 - Metrics</title>
+  <desc id="desc">Illustration of time series metrics and service level indicators.</desc>
+  <rect width="1200" height="675" fill="#f7fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">Metrics</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Numerical signals for trends, capacity and service health</text>
+  <line x1="180" y1="500" x2="1020" y2="500" stroke="#374151" stroke-width="4"/>
+  <line x1="180" y1="250" x2="180" y2="500" stroke="#374151" stroke-width="4"/>
+  <polyline points="190,455 290,430 390,445 490,360 590,380 690,300 790,330 890,260 1010,285" fill="none" stroke="#2563eb" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="190,475 290,465 390,460 490,455 590,445 690,420 790,425 890,410 1010,405" fill="none" stroke="#16a34a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="760" y="210" width="250" height="92" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="3"/>
+  <text x="885" y="248" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#78350f">SLI Trend</text>
+  <text x="885" y="278" text-anchor="middle" font-family="Arial" font-size="17" fill="#92400e">latency and throughput</text>
+</svg>

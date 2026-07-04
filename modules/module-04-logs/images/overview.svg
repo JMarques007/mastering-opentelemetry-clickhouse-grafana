@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">Module 04 - Logs</title>
+  <desc id="desc">Illustration of structured logs enriched with resource and trace context.</desc>
+  <rect width="1200" height="675" fill="#f8fafc"/>
+  <rect x="70" y="70" width="1060" height="535" rx="24" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+  <text x="110" y="135" font-family="Arial" font-size="42" font-weight="700" fill="#111827">Logs</text>
+  <text x="110" y="185" font-family="Arial" font-size="22" fill="#4b5563">Events with context, structure and operational meaning</text>
+  <rect x="150" y="250" width="900" height="250" rx="18" fill="#111827"/>
+  <text x="190" y="310" font-family="Consolas, monospace" font-size="24" fill="#bfdbfe">{ time: "2026-07-04T13:00:00Z", level: "ERROR" }</text>
+  <text x="190" y="360" font-family="Consolas, monospace" font-size="24" fill="#bbf7d0">{ service: "checkout", span_id: "9f3a", user_id: "42" }</text>
+  <text x="190" y="410" font-family="Consolas, monospace" font-size="24" fill="#fde68a">{ message: "payment authorization failed" }</text>
+  <text x="190" y="460" font-family="Consolas, monospace" font-size="24" fill="#fecaca">{ action: "investigate correlated trace" }</text>
+  <circle cx="990" cy="255" r="48" fill="#fee2e2" stroke="#dc2626" stroke-width="4"/>
+  <text x="990" y="265" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700" fill="#991b1b">!</text>
+</svg>

@@ -19,6 +19,7 @@ This module teaches logs as structured event evidence that supports investigatio
 
 - [Module narrative](module.md)
 - [Exercise - Structured log rewrite](exercise.md)
+- [Lab - Structured log ingestion with OTLP](../../labs/module-04-structured-log-ingestion.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

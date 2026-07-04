@@ -19,6 +19,7 @@ This module explains how the OpenTelemetry Collector receives, processes and exp
 
 - [Module narrative](module.md)
 - [Exercise - Pipeline review](exercise.md)
+- [Lab - Collector to ClickHouse pipeline](../../labs/module-03-collector-clickhouse-pipeline.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

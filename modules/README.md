@@ -31,3 +31,12 @@ Module 01 also includes SVG versions of the richer training images from the refe
 - [logs-metrics-traces.svg](module-01-introduction-to-observability/images/logs-metrics-traces.svg)
 - [distributed-tracing.svg](module-01-introduction-to-observability/images/distributed-tracing.svg)
 - [telemetry-correlation.svg](module-01-introduction-to-observability/images/telemetry-correlation.svg)
+
+## Standard SVG training image set
+
+Modules 02 through 14 include four editable SVG training images:
+
+- `concept-map.svg` - explains the main concepts and relationships.
+- `workflow.svg` - shows the operational or technical flow.
+- `lab-practice.svg` - visualizes the hands-on exercise sequence.
+- `operations-view.svg` - connects symptoms, evidence and actions for production use.

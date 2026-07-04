@@ -25,6 +25,13 @@ The goal is to provide professional, reusable training material that can be used
 | 13 | Best Practices | ⏳ Planned |
 | 14 | Production Case Study | ⏳ Planned |
 
+## Project Documents
+
+- [Roadmap](ROADMAP.md) - course delivery phases and content plan.
+- [Style Guide](STYLE_GUIDE.md) - writing, lab, diagram and slide conventions.
+- [Module Template](modules/TEMPLATE.md) - reusable structure for each course module.
+- [Website Home](website/index.md) - initial GitHub Pages landing page content.
+
 ## Repository Layout
 
 ```text

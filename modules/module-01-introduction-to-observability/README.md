@@ -15,6 +15,9 @@ After completing this module, learners should be able to:
 ## Main content
 
 - [Module narrative](module.md)
+- [Exercise - Investigation summary](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Observability overview](images/observability-overview.svg)
 - [Logs, metrics and traces](images/logs-metrics-traces.svg)
 - [Distributed tracing](images/distributed-tracing.svg)

@@ -1,26 +1,35 @@
 # Module 14 - Production Case Study
 
-This module brings the course together through a production-style incident investigation using logs, metrics, traces, dashboards and alerts.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Follow an incident from detection to learning.
-- Correlate metrics, traces and logs.
-- Identify root cause using evidence.
-- Produce practical remediation and post-incident notes.
+## Purpose
 
-## Main content
+This module ties the course together through a production-style incident investigation, mitigation and learning workflow.
+
+## Main topics
+
+- Incident impact analysis.
+- Metrics, traces and logs in sequence.
+- Mitigation and validation.
+- Post-incident learning.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Incident team walkthrough](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
-- [Incident workflow](images/workflow.svg)
+- [Production incident workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-60 to 90 minutes.
+Draft available.
 
-## Course completion
+## Next module
 
-This is the capstone module.
+Course wrap-up and review.

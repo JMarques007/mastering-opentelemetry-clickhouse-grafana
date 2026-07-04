@@ -1,25 +1,34 @@
 # Module 10 - Grafana
 
-This module explains Grafana as the exploration and visualization layer for telemetry data.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Connect Grafana concepts to observability workflows.
-- Understand data sources, Explore, panels and dashboards.
-- Create useful visualizations from telemetry queries.
-- Recognize practices for reliable operational views.
+## Purpose
 
-## Main content
+This module explains Grafana as the exploration, dashboard and alerting interface for telemetry stored in observability backends.
+
+## Main topics
+
+- Data sources and Explore.
+- Panels and dashboards.
+- Visualization choices.
+- Dashboard performance and trust.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Checkout dashboard plan](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Grafana workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-60 minutes.
+Draft available.
 
 ## Next module
 

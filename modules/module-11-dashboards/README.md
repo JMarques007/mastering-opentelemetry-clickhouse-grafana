@@ -1,25 +1,34 @@
 # Module 11 - Dashboards
 
-This module teaches dashboard design as an operational communication discipline, not just a collection of charts.
+## Duration
 
-## Learning objectives
+Approximately 1 hour.
 
-- Design dashboards around audience and questions.
-- Choose panels that support decisions.
-- Organize layouts for scanning and investigation.
-- Recognize dashboard anti-patterns.
+## Purpose
 
-## Main content
+This module teaches dashboards as decision surfaces built around audience, operational questions and investigation paths.
+
+## Main topics
+
+- Dashboard audience and intent.
+- Layout and hierarchy.
+- Drilldowns from symptoms to evidence.
+- Dashboard review and maintenance.
+
+## Training assets
 
 - [Module narrative](module.md)
+- [Exercise - Operator dashboard design](exercise.md)
+- [Quiz - Review questions and answers](quiz.md)
+- [Official references](references.md)
 - [Concept map](images/concept-map.svg)
 - [Dashboard workflow](images/workflow.svg)
 - [Lab practice](images/lab-practice.svg)
 - [Operations view](images/operations-view.svg)
 
-## Suggested duration
+## Status
 
-45 to 60 minutes.
+Draft available.
 
 ## Next module
 

@@ -30,9 +30,16 @@ Every module should follow the shared module template and include:
 
 ## Diagrams
 
-- Store editable sources in `diagrams/`.
-- Export images only when they are required by slides or documentation.
-- Name diagrams with the module number and a short subject, for example `02-otel-architecture-flow`.
+- Store editable sources in `diagrams/` when a diagram is shared across modules.
+- Store module-specific exported SVGs in `modules/module-NN-topic/images/`.
+- Prefer editable SVG or Mermaid for architecture, flow and concept diagrams.
+- Avoid generated raster images for technical architecture unless the asset is intentionally illustrative rather than instructional.
+- Keep diagram titles and subtitles clear of nodes, cards and connector lines.
+- Use accessible SVG metadata where practical, including `<title>`, `<desc>` and `role="img"`.
+- Name module-specific image files by purpose: `concept-map.svg`, `workflow.svg`, `lab-practice.svg` and `operations-view.svg`.
+- Name shared diagrams with the module number and a short subject, for example `02-otel-architecture-flow.svg`.
+- Use lowercase kebab-case for new diagram filenames.
+- When a diagram is used in slides, reference the source path instead of copying the image into `slides/`.
 
 ## Labs and Examples
 
@@ -46,6 +53,14 @@ Every module should follow the shared module template and include:
 - Slides should be concise and visual.
 - Put speaker context in notes or supporting module text.
 - Reuse shared assets from `assets/` instead of copying images between modules.
+- Keep Markdown slide outlines in `slides/` until a final deck format is required.
+- Name slide outlines as `module-NN-topic-outline.md`.
+
+## Instructor Notes
+
+- Put cross-module delivery guidance in `instructor-notes.md`.
+- Put module-specific delivery guidance in the module exercise, lab or slide outline.
+- Include timing, demo suggestions and discussion prompts where they help teaching.
 
 ## Status Labels
 

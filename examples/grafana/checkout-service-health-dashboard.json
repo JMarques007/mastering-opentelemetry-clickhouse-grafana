@@ -1,0 +1,141 @@
+{
+  "__inputs": [
+    {
+      "name": "DS_CLICKHOUSE",
+      "label": "ClickHouse",
+      "description": "Grafana ClickHouse datasource connected to the OpenTelemetry database.",
+      "type": "datasource",
+      "pluginId": "grafana-clickhouse-datasource",
+      "pluginName": "ClickHouse"
+    }
+  ],
+  "uid": "checkout-service-health",
+  "title": "Checkout Service Health",
+  "tags": ["observability", "checkout", "opentelemetry", "clickhouse"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "30s",
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "templating": {
+    "list": [
+      {
+        "name": "service",
+        "label": "Service",
+        "type": "constant",
+        "query": "checkout-api",
+        "current": {
+          "text": "checkout-api",
+          "value": "checkout-api"
+        }
+      }
+    ]
+  },
+  "panels": [
+    {
+      "id": 1,
+      "title": "Request volume",
+      "type": "timeseries",
+      "description": "Counter-like checkout request metric over time.",
+      "datasource": {
+        "type": "grafana-clickhouse-datasource",
+        "uid": "${DS_CLICKHOUSE}"
+      },
+      "gridPos": { "h": 8, "w": 8, "x": 0, "y": 0 },
+      "fieldConfig": {
+        "defaults": { "unit": "reqps" },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawSql": "SELECT toStartOfMinute(TimeUnix) AS time, sum(Value) AS value FROM otel_metrics_sum WHERE MetricName = 'checkout.requests' AND TimeUnix >= $__fromTime AND TimeUnix <= $__toTime GROUP BY time ORDER BY time"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Error spans",
+      "type": "timeseries",
+      "description": "Number of error spans for the selected service.",
+      "datasource": {
+        "type": "grafana-clickhouse-datasource",
+        "uid": "${DS_CLICKHOUSE}"
+      },
+      "gridPos": { "h": 8, "w": 8, "x": 8, "y": 0 },
+      "fieldConfig": {
+        "defaults": { "unit": "short" },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawSql": "SELECT toStartOfMinute(Timestamp) AS time, count() AS value FROM otel_traces WHERE ServiceName = '$service' AND StatusCode = 'Error' AND Timestamp >= $__fromTime AND Timestamp <= $__toTime GROUP BY time ORDER BY time"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Slow spans",
+      "type": "timeseries",
+      "description": "Spans slower than 500 ms for the selected service.",
+      "datasource": {
+        "type": "grafana-clickhouse-datasource",
+        "uid": "${DS_CLICKHOUSE}"
+      },
+      "gridPos": { "h": 8, "w": 8, "x": 16, "y": 0 },
+      "fieldConfig": {
+        "defaults": { "unit": "short" },
+        "overrides": []
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "time_series",
+          "rawSql": "SELECT toStartOfMinute(Timestamp) AS time, count() AS value FROM otel_traces WHERE ServiceName = '$service' AND Duration > 500 * 1000 * 1000 AND Timestamp >= $__fromTime AND Timestamp <= $__toTime GROUP BY time ORDER BY time"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Recent slow or failed spans",
+      "type": "table",
+      "description": "Representative spans that should lead into trace and log investigation.",
+      "datasource": {
+        "type": "grafana-clickhouse-datasource",
+        "uid": "${DS_CLICKHOUSE}"
+      },
+      "gridPos": { "h": 10, "w": 12, "x": 0, "y": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT Timestamp, TraceId, SpanName, Duration, StatusCode, StatusMessage FROM otel_traces WHERE ServiceName = '$service' AND (StatusCode = 'Error' OR Duration > 500 * 1000 * 1000) AND Timestamp >= $__fromTime AND Timestamp <= $__toTime ORDER BY Timestamp DESC LIMIT 50"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Recent error logs",
+      "type": "table",
+      "description": "Structured logs that can be correlated to traces by TraceId.",
+      "datasource": {
+        "type": "grafana-clickhouse-datasource",
+        "uid": "${DS_CLICKHOUSE}"
+      },
+      "gridPos": { "h": 10, "w": 12, "x": 12, "y": 8 },
+      "targets": [
+        {
+          "refId": "A",
+          "format": "table",
+          "rawSql": "SELECT Timestamp, TraceId, SeverityText, Body, LogAttributes['failure.reason'] AS reason FROM otel_logs WHERE ServiceName = '$service' AND SeverityText IN ('ERROR', 'FATAL') AND Timestamp >= $__fromTime AND Timestamp <= $__toTime ORDER BY Timestamp DESC LIMIT 50"
+        }
+      ]
+    }
+  ]
+}

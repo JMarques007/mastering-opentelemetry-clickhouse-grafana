@@ -19,6 +19,7 @@ This module explains Grafana as the exploration, dashboard and alerting interfac
 
 - [Module narrative](module.md)
 - [Exercise - Checkout dashboard plan](exercise.md)
+- [Lab - Grafana checkout dashboard starter](../../labs/module-10-grafana-dashboard-starter.md)
 - [Quiz - Review questions and answers](quiz.md)
 - [Official references](references.md)
 - [Concept map](images/concept-map.svg)

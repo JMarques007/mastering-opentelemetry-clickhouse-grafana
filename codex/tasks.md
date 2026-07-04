@@ -41,7 +41,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add a metrics lab with counter, gauge and histogram payloads.
 - [x] Add a trace correlation lab that links trace ids to logs.
 - [x] Add ClickHouse SQL query examples for common observability investigations.
-- [ ] Add Grafana dashboard starter JSON for checkout service health.
+- [x] Add Grafana dashboard starter JSON for checkout service health.
 - [ ] Add alert rule examples for checkout error rate and latency.
 
 ## Working Rules

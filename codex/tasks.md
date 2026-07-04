@@ -13,39 +13,18 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Add `AGENTS.md` with Codex-specific instructions.
 - [x] Add `codex/tasks.md` with the immediate backlog.
 
-## Sprint 2 - Module 01 and Module 02 Readiness
+## Sprint 2 - Module Readiness
 
-### Module 01 - Introduction to Observability
-
-- [ ] Create the module folder under `modules/` using the repository naming convention.
-- [ ] Add `README.md` as the module entry point.
-- [ ] Add `module.md` with a complete book-style narrative.
-- [ ] Cover the difference between logs, metrics and traces.
-- [ ] Explain symptoms, signals, telemetry and observability in production terms.
-- [x] Add an initial overview SVG illustration.
-- [ ] Add a Mermaid diagram for the observability feedback loop.
-- [ ] Add `quiz.md` with questions and answer key.
-- [ ] Add `references.md` with official sources.
-- [ ] Add one introductory lab or guided exercise.
-
-### Module 02 - OpenTelemetry Architecture
-
-- [ ] Create or normalize the module folder under `modules/` using the repository naming convention.
-- [ ] Add `README.md` as the module entry point.
-- [ ] Add or expand `module.md` to match Module 01 quality.
-- [ ] Explain APIs, SDKs, instrumentation libraries, exporters and the Collector.
-- [ ] Explain OTLP and the logs, metrics and traces signal model.
-- [x] Add an initial overview SVG illustration.
-- [ ] Add a Mermaid architecture diagram for telemetry flow.
-- [ ] Add one Collector-oriented lab.
-- [ ] Add reusable example configuration under `examples/` or the module folder.
-- [ ] Add `quiz.md` with questions and answer key.
-- [ ] Add `references.md` with official OpenTelemetry sources.
+- [x] Create module folders under `modules/` using the repository naming convention.
+- [x] Add `README.md` as the entry point for every module.
+- [x] Add `module.md` book-style narrative for every module.
+- [x] Include exercises, quiz questions and official references inside every `module.md`.
+- [x] Add initial overview SVG illustrations for all 14 modules.
+- [x] Add richer editable SVG training image packs for Modules 02 through 14.
 
 ## Sprint 3 - Teaching Assets
 
-- [x] Add initial overview SVG illustrations for all 14 modules.
-- [x] Add richer editable SVG training image packs for Modules 02 through 14.
+- [ ] Split exercises, quizzes and references into dedicated files where useful.
 - [ ] Add a shared slide outline for Module 01.
 - [ ] Add a shared slide outline for Module 02.
 - [ ] Add shared diagram naming conventions to `STYLE_GUIDE.md` if needed.

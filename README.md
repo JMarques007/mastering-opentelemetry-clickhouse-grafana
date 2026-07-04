@@ -25,12 +25,49 @@ The goal is to provide professional, reusable training material that can be used
 | 13 | Best Practices | ✅ Draft available |
 | 14 | Production Case Study | ✅ Draft available |
 
+## Start Here
+
+- [Workshop delivery plan](docs/workshop-delivery-plan.md) - one-day, two-day and self-paced delivery paths.
+- [Lab index](docs/lab-index.md) - lab execution order, shared environment and payload inventory.
+- [Local lab troubleshooting](docs/local-lab-troubleshooting.md) - common Docker, Collector and ClickHouse fixes.
+- [Instructor notes](instructor-notes.md) - timing, demos, prompts and facilitation guidance.
+- [Module quality review checklist](docs/module-quality-review-checklist.md) - criteria for reviewing modules before delivery.
+- [Release readiness checklist](docs/release-readiness-checklist.md) - final sign-off before teaching or tagging a release.
+
 ## Project Documents
 
 - [Roadmap](ROADMAP.md) - course delivery phases and content plan.
 - [Style Guide](STYLE_GUIDE.md) - writing, lab, diagram and slide conventions.
 - [Module Template](modules/TEMPLATE.md) - reusable structure for each course module.
 - [Website Home](website/index.md) - initial GitHub Pages landing page content.
+- [Codex backlog](codex/tasks.md) - immediate execution backlog for Codex work.
+
+## Hands-On Labs
+
+The main lab environment uses Docker Compose to run OpenTelemetry Collector Contrib and ClickHouse:
+
+```bash
+docker compose -f examples/docker-compose/collector-clickhouse.yaml up -d
+```
+
+Recommended lab sequence:
+
+1. [Collector to ClickHouse pipeline](labs/module-03-collector-clickhouse-pipeline.md)
+2. [Structured log ingestion with OTLP](labs/module-04-structured-log-ingestion.md)
+3. [OTLP metrics payloads](labs/module-05-metrics-otlp-payloads.md)
+4. [Trace and log correlation](labs/module-06-trace-log-correlation.md)
+5. [ClickHouse observability query workbook](labs/module-09-clickhouse-query-workbook.md)
+6. [Grafana checkout dashboard starter](labs/module-10-grafana-dashboard-starter.md)
+7. [Checkout alert rule examples](labs/module-12-alert-rule-examples.md)
+
+## Reusable Examples
+
+- [Collector configuration](examples/collector/otel-collector-clickhouse.yaml)
+- [Docker Compose lab environment](examples/docker-compose/collector-clickhouse.yaml)
+- [OTLP sample payloads](examples/otlp/)
+- [ClickHouse query workbook](examples/clickhouse/observability-queries.sql)
+- [Grafana checkout dashboard JSON](examples/grafana/checkout-service-health-dashboard.json)
+- [Checkout alert rule examples](examples/alerting/checkout-alert-rules.yaml)
 
 ## Repository Layout
 
@@ -56,4 +93,4 @@ scripts/      Automation scripts
 
 ## Current Focus
 
-The current priority is reviewing and refining the full set of draft modules into polished teaching material.
+The current priority is reviewing and refining the full set of draft modules into polished teaching material, then validating the labs and delivery assets before a workshop release.

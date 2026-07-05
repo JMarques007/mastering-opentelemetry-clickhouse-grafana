@@ -1,0 +1,27 @@
+flowchart LR
+    symptom[Production symptom\nSlow or failing checkout authorization]
+    question[Operational questions\nWhat failed? Where is latency? Which dependency?]
+    auto[Automatic instrumentation\nHTTP, DB, runtime, framework spans]
+    manual[Manual instrumentation\nBusiness spans and dependency boundaries]
+    attrs[Safe attributes\nStable names, semantic conventions, controlled labels]
+    signals[Correlated signals\nMetrics + traces + logs]
+    review[Production review\nCardinality, privacy, usefulness, ownership]
+    action[Engineering decision\nTune code, fix dependency, adjust alert, improve telemetry]
+
+    symptom --> question
+    question --> auto
+    question --> manual
+    auto --> signals
+    manual --> attrs
+    attrs --> signals
+    signals --> review
+    review --> action
+    review -. feedback .-> question
+
+    classDef risk fill:#fff3cd,stroke:#856404,color:#333;
+    classDef good fill:#d4edda,stroke:#155724,color:#333;
+    classDef core fill:#d1ecf1,stroke:#0c5460,color:#333;
+
+    class symptom,risk;
+    class attrs,signals,review,good;
+    class question,auto,manual,action,core;

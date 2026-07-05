@@ -77,6 +77,20 @@ Sprint goal: align Modules 03-06 with the Course Bible using the user stories in
 - [x] S7-07 Audit Module 06 against the Course Bible and Gold Standard Module.
 - [x] S7-08 Upgrade Module 06 to Course Bible standard.
 
+## Sprint 8 - Advanced Signal Flow Module Alignment
+
+Sprint goal: align Modules 07-10 with the Course Bible, focusing on context propagation, instrumentation, ClickHouse and Grafana operational workflows.
+
+- [x] S8-01 Upgrade Module 07 Context Propagation to Course Bible standard.
+- [x] S8-02 Add Module 07 context propagation boundary lab.
+- [x] S8-03 Add Module 07 editable propagation diagram and slide outline.
+- [ ] S8-04 Audit Module 08 against the Course Bible and Gold Standard Module.
+- [ ] S8-05 Upgrade Module 08 to Course Bible standard.
+- [ ] S8-06 Audit Module 09 against the Course Bible and Gold Standard Module.
+- [ ] S8-07 Upgrade Module 09 to Course Bible standard.
+- [ ] S8-08 Audit Module 10 against the Course Bible and Gold Standard Module.
+- [ ] S8-09 Upgrade Module 10 to Course Bible standard.
+
 ## Working Rules
 
 - Do not only create structure; each execution should add meaningful content.

@@ -1,0 +1,17 @@
+flowchart LR
+    user[User request] --> api[API service\nHTTP server span]
+    api -->|inject traceparent| httpClient[API HTTP client span]
+    httpClient -->|HTTP headers| order[Order service\nHTTP server span]
+    order --> publish[Queue publish span]
+    publish -->|inject context into metadata| queue[(Message queue)]
+    queue -->|extract context from metadata| worker[Fulfillment worker\nconsume span]
+    worker --> db[(Database update span)]
+
+    broken{{Propagation break}}
+    publish -. missing metadata .-> broken
+    broken -. new root trace .-> worker
+
+    classDef boundary fill:#fff,stroke:#555,stroke-width:1px;
+    classDef risk fill:#fff,stroke:#b00020,stroke-width:2px;
+    class user,api,httpClient,order,publish,queue,worker,db boundary;
+    class broken risk;

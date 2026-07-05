@@ -13,6 +13,8 @@ Codex should work as a technical author, course designer and observability archi
 - Use `docs/GOLD_STANDARD_MODULE.md` as the practical model for module quality.
 - Use `docs/COURSE_CHECKLIST.md` before considering a module ready for review.
 - Use `docs/BAD_WRITING_EXAMPLES.md` to avoid weak, definition-only or filler writing.
+- Use `docs/SPRINT_ORGANIZATION.md` when planning or sequencing sprint work.
+- Use `docs/USER_STORIES.md` to frame new work as learner, instructor, maintainer or platform-engineer value before converting it into execution tasks.
 - Follow `STYLE_GUIDE.md` for writing, labs, diagrams and slides.
 - Follow `ROADMAP.md` when choosing the next content area.
 - Keep module work consistent with `modules/TEMPLATE.md` unless the Course Bible defines a stricter standard.
@@ -20,9 +22,9 @@ Codex should work as a technical author, course designer and observability archi
 
 ## Current Priority
 
-1. Align Module 01 with the Course Bible and Gold Standard Module guidance.
-2. Bring Module 02 to the same quality level.
-3. Gradually align Modules 03-14 with the same standard.
+1. Use `docs/SPRINT_ORGANIZATION.md` and `docs/USER_STORIES.md` to plan Sprint 7 work.
+2. Align Modules 03-06 with the Course Bible and Gold Standard Module guidance.
+3. Gradually align Modules 07-14 with the same standard.
 4. Validate labs and examples from a clean checkout.
 5. Prepare release-ready teaching material only after module quality review.
 
@@ -34,6 +36,8 @@ Codex should work as a technical author, course designer and observability archi
 - `docs/COURSE_CHECKLIST.md` is the module readiness checklist.
 - `docs/GOLD_STANDARD_MODULE.md` describes the target quality bar.
 - `docs/BAD_WRITING_EXAMPLES.md` shows writing patterns to avoid.
+- `docs/SPRINT_ORGANIZATION.md` defines sprint planning, definitions of ready/done and sequencing.
+- `docs/USER_STORIES.md` defines personas, story format, story backlog and acceptance criteria.
 - `STYLE_GUIDE.md` defines writing and asset conventions.
 - `modules/` contains course source material.
 - `modules/TEMPLATE.md` is the canonical module template.
@@ -55,6 +59,14 @@ Codex should work as a technical author, course designer and observability archi
 - Add Production Example, Architect Note, Best Practice and Common Mistake blocks where the Course Bible requires them.
 - Avoid generic filler, empty sections and unfinished TODO prose.
 - Do not add empty files unless they are `.gitkeep` files required to preserve folders.
+
+## Planning Rules
+
+- Convert new planning intent into user stories before adding execution tasks.
+- Keep `docs/USER_STORIES.md` as the planning source and `codex/tasks.md` as the immediate execution tracker.
+- Keep each sprint tied to a clear goal from `docs/SPRINT_ORGANIZATION.md`.
+- Prefer one audit PR and one upgrade PR per module during Course Bible alignment.
+- Record deferred work explicitly instead of leaving it implied inside a merged PR.
 
 ## Module Definition of Done
 

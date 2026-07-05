@@ -31,6 +31,8 @@ The goal is to provide professional, reusable training material that can be used
 - [Gold Standard Module](docs/GOLD_STANDARD_MODULE.md) - practical model for high-quality module writing.
 - [Course Checklist](docs/COURSE_CHECKLIST.md) - checklist before modules are considered ready for review or release.
 - [Bad Writing Examples](docs/BAD_WRITING_EXAMPLES.md) - weak writing patterns to avoid.
+- [Sprint organization](docs/SPRINT_ORGANIZATION.md) - sprint cadence, definitions of ready/done and recommended future sprint sequence.
+- [User stories](docs/USER_STORIES.md) - persona-driven story backlog and acceptance criteria for upcoming work.
 - [Workshop delivery plan](docs/workshop-delivery-plan.md) - one-day, two-day and self-paced delivery paths.
 - [Lab index](docs/lab-index.md) - lab execution order, shared environment and payload inventory.
 - [Local lab troubleshooting](docs/local-lab-troubleshooting.md) - common Docker, Collector and ClickHouse fixes.
@@ -91,6 +93,8 @@ scripts/      Automation scripts
 
 - Markdown is the primary source for documentation.
 - Course content follows the [Course Bible](docs/COURSE_BIBLE.md).
+- Sprint planning follows [Sprint organization](docs/SPRINT_ORGANIZATION.md).
+- Upcoming work should be framed through [User stories](docs/USER_STORIES.md) before being converted into execution tasks.
 - Slides should be visual, concise, and supported by speaker notes where possible.
 - Diagrams should be editable whenever possible.
 - Images are used sparingly and only when they add value.

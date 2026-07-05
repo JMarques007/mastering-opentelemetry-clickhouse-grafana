@@ -2,6 +2,8 @@
 
 This file defines the immediate execution backlog for Codex. Work from top to bottom unless a GitHub issue or user request says otherwise.
 
+Use `docs/SPRINT_ORGANIZATION.md` for sprint planning rules and `docs/USER_STORIES.md` for story definitions, personas and acceptance criteria.
+
 ## Sprint 1 - Repository Foundation
 
 - [x] Create professional `README.md`.
@@ -61,6 +63,19 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 - [x] Audit Module 02 against the Course Bible and Gold Standard Module.
 - [x] Upgrade Module 02 to include required teaching blocks and interview questions.
 - [x] Create a repeatable module alignment checklist for Modules 03-14.
+
+## Sprint 7 - Signal Pipeline Module Alignment
+
+Sprint goal: align Modules 03-06 with the Course Bible using the user stories in `docs/USER_STORIES.md`.
+
+- [ ] S7-01 Audit Module 03 against the Course Bible and Gold Standard Module.
+- [ ] S7-02 Upgrade Module 03 to Course Bible standard.
+- [ ] S7-03 Audit Module 04 against the Course Bible and Gold Standard Module.
+- [ ] S7-04 Upgrade Module 04 to Course Bible standard.
+- [ ] S7-05 Audit Module 05 against the Course Bible and Gold Standard Module.
+- [ ] S7-06 Upgrade Module 05 to Course Bible standard.
+- [ ] S7-07 Audit Module 06 against the Course Bible and Gold Standard Module.
+- [ ] S7-08 Upgrade Module 06 to Course Bible standard.
 
 ## Working Rules
 

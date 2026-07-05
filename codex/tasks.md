@@ -56,7 +56,7 @@ This file defines the immediate execution backlog for Codex. Work from top to bo
 ## Sprint 6 - Course Bible Alignment
 
 - [x] Promote Course Bible, Checklist, Gold Standard and Bad Writing docs in README and AGENTS.
-- [ ] Audit Module 01 against the Course Bible and Gold Standard Module.
+- [x] Audit Module 01 against the Course Bible and Gold Standard Module.
 - [ ] Upgrade Module 01 to include required teaching blocks and interview questions.
 - [ ] Audit Module 02 against the Course Bible and Gold Standard Module.
 - [ ] Upgrade Module 02 to include required teaching blocks and interview questions.

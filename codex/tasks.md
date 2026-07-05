@@ -68,7 +68,7 @@ Use `docs/SPRINT_ORGANIZATION.md` for sprint planning rules and `docs/USER_STORI
 
 Sprint goal: align Modules 03-06 with the Course Bible using the user stories in `docs/USER_STORIES.md`.
 
-- [ ] S7-01 Audit Module 03 against the Course Bible and Gold Standard Module.
+- [x] S7-01 Audit Module 03 against the Course Bible and Gold Standard Module.
 - [ ] S7-02 Upgrade Module 03 to Course Bible standard.
 - [ ] S7-03 Audit Module 04 against the Course Bible and Gold Standard Module.
 - [ ] S7-04 Upgrade Module 04 to Course Bible standard.

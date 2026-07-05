@@ -72,7 +72,7 @@ Sprint goal: align Modules 03-06 with the Course Bible using the user stories in
 - [x] S7-02 Upgrade Module 03 to Course Bible standard.
 - [x] S7-03 Audit Module 04 against the Course Bible and Gold Standard Module.
 - [x] S7-04 Upgrade Module 04 to Course Bible standard.
-- [ ] S7-05 Audit Module 05 against the Course Bible and Gold Standard Module.
+- [x] S7-05 Audit Module 05 against the Course Bible and Gold Standard Module.
 - [ ] S7-06 Upgrade Module 05 to Course Bible standard.
 - [ ] S7-07 Audit Module 06 against the Course Bible and Gold Standard Module.
 - [ ] S7-08 Upgrade Module 06 to Course Bible standard.

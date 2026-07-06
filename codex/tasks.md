@@ -87,7 +87,7 @@ Sprint goal: align Modules 07-10 with the Course Bible, focusing on context prop
 - [x] S8-04 Audit Module 08 against the Course Bible and Gold Standard Module.
 - [x] S8-05 Upgrade Module 08 to Course Bible standard.
 - [x] S8-06 Audit Module 09 against the Course Bible and Gold Standard Module.
-- [ ] S8-07 Upgrade Module 09 to Course Bible standard.
+- [x] S8-07 Upgrade Module 09 to Course Bible standard.
 - [ ] S8-08 Audit Module 10 against the Course Bible and Gold Standard Module.
 - [ ] S8-09 Upgrade Module 10 to Course Bible standard.
 

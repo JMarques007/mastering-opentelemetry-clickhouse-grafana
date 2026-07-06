@@ -109,6 +109,19 @@ Sprint goal: align Modules 13-14 with the Course Bible, focusing on production o
 - [x] S10-03 Audit Module 14 against the Course Bible and Gold Standard Module.
 - [x] S10-04 Upgrade Module 14 to Course Bible standard.
 
+## Sprint 11 - Premium SVG Visual Teaching Assets
+
+Sprint goal: create a consistent set of editable, publication-quality SVG explainer images for every module, inspired by the telemetry correlation and logs/metrics/traces examples, with careful attention to readability, margins and classroom use.
+
+- [ ] S11-01 Define the premium SVG visual system for the course.
+- [ ] S11-02 Audit existing module images for readability, overlap, consistency and teaching value.
+- [ ] S11-03 Create or upgrade premium SVG visuals for Modules 01-03.
+- [ ] S11-04 Create or upgrade premium SVG visuals for Modules 04-06.
+- [ ] S11-05 Create or upgrade premium SVG visuals for Modules 07-09.
+- [ ] S11-06 Create or upgrade premium SVG visuals for Modules 10-12.
+- [ ] S11-07 Create or upgrade premium SVG visuals for Modules 13-14.
+- [ ] S11-08 Link, verify and document the final visual assets across module narratives and READMEs.
+
 ## Working Rules
 
 - Do not only create structure; each execution should add meaningful content.

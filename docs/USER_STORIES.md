@@ -177,13 +177,18 @@ Acceptance criteria:
 - Common mistakes cover missing context, over-instrumentation and unreliable span naming.
 - Practice assets are linked.
 
-## Later sprint stories
-
 ### Story S8-01 - Context propagation alignment
 
 As a learner,
 I want context propagation explained separately from telemetry export,
 so that I understand why traces break across service boundaries.
+
+Acceptance criteria:
+
+- Module 07 explains propagation as the movement of trace identity across boundaries.
+- The module distinguishes propagation from telemetry export.
+- Practice assets show a broken and repaired propagation path.
+- Key Takeaways and Common Interview Questions are present.
 
 ### Story S8-02 - Instrumentation alignment
 
@@ -191,17 +196,92 @@ As a platform engineer,
 I want instrumentation guidance to compare manual and automatic approaches,
 so that teams can make intentional adoption decisions.
 
-### Story S9-01 - ClickHouse alignment
+Acceptance criteria:
+
+- Module 08 explains manual, automatic and hybrid instrumentation trade-offs.
+- The module covers ownership, rollout, signal quality and production risk.
+- Common mistakes include over-instrumentation and missing business spans.
+- Practice assets are linked.
+
+### Story S8-03 - ClickHouse alignment
 
 As a platform engineer,
 I want ClickHouse explained as storage and query infrastructure for telemetry,
 so that learners understand schema, ingestion, retention and query trade-offs.
 
-### Story S9-02 - Grafana alignment
+Acceptance criteria:
+
+- Module 09 includes Course Bible teaching blocks.
+- The module explains Collector-to-ClickHouse architecture.
+- The narrative covers schema, batching, retention, TTL and SQL investigation patterns.
+- Practice assets are linked.
+
+### Story S8-04 - Grafana alignment
 
 As an instructor,
 I want Grafana modules to connect data sources, panels, dashboards and alerts,
 so that learners can move from telemetry storage to operational insight.
+
+Acceptance criteria:
+
+- Module 10 includes Course Bible teaching blocks.
+- The module explains data sources, Explore, panels, dashboards and trust.
+- The narrative covers dashboard purpose, audience, query cost and drilldowns.
+- Practice assets are linked.
+
+### Story S9-01 - Module 11 audit
+
+As a course maintainer,
+I want Module 11 audited against the Course Bible and Gold Standard Module,
+so that dashboard content can be upgraded without losing useful existing guidance.
+
+Acceptance criteria:
+
+- `docs/reviews/module-11-course-bible-audit.md` exists.
+- The audit checks dashboard purpose, audience, layout, variables, drilldowns and ownership.
+- The audit identifies missing production examples, teaching blocks and interview questions.
+- `codex/tasks.md` reflects the completed audit when the work is done.
+
+### Story S9-02 - Module 11 upgrade
+
+As an instructor,
+I want the dashboards module to teach operational dashboard design,
+so that learners can build dashboards that support incident response and repeated service review.
+
+Acceptance criteria:
+
+- Module 11 includes Course Bible teaching blocks.
+- The module explains dashboard audience, layout, panel hierarchy, variables, drilldowns and ownership.
+- Common mistakes cover dashboard sprawl, unclear units, hidden filters and unowned panels.
+- Practice assets are linked.
+
+### Story S9-03 - Module 12 audit
+
+As a course maintainer,
+I want Module 12 audited against the Course Bible and Gold Standard Module,
+so that alerting content can be upgraded around actionability and production operations.
+
+Acceptance criteria:
+
+- `docs/reviews/module-12-course-bible-audit.md` exists.
+- The audit checks alert rule quality, routing, severity, noise, ownership and runbook guidance.
+- The audit identifies missing production examples, teaching blocks and interview questions.
+- `codex/tasks.md` reflects the completed audit when the work is done.
+
+### Story S9-04 - Module 12 upgrade
+
+As a platform engineer,
+I want the alerting module to explain actionable alerts and response workflows,
+so that teams avoid noisy rules and build alerts that lead to clear operational action.
+
+Acceptance criteria:
+
+- Module 12 includes Course Bible teaching blocks.
+- The module explains symptoms versus causes, severity, routing, ownership, silencing and runbooks.
+- Common mistakes cover alert fatigue, duplicate rules, missing context and unactionable thresholds.
+- Practice assets are linked.
+
+## Later sprint stories
 
 ### Story S10-01 - Best practices consolidation
 

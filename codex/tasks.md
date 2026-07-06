@@ -104,7 +104,7 @@ Sprint goal: align Modules 11-12 with the Course Bible, focusing on dashboard de
 
 Sprint goal: align Modules 13-14 with the Course Bible, focusing on production operating models, course-wide best practices and an end-to-end observability case study.
 
-- [ ] S10-01 Audit Module 13 against the Course Bible and Gold Standard Module.
+- [x] S10-01 Audit Module 13 against the Course Bible and Gold Standard Module.
 - [ ] S10-02 Upgrade Module 13 to Course Bible standard.
 - [ ] S10-03 Audit Module 14 against the Course Bible and Gold Standard Module.
 - [ ] S10-04 Upgrade Module 14 to Course Bible standard.

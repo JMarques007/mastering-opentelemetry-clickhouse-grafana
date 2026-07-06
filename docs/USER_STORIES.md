@@ -281,19 +281,57 @@ Acceptance criteria:
 - Common mistakes cover alert fatigue, duplicate rules, missing context and unactionable thresholds.
 - Practice assets are linked.
 
-## Later sprint stories
+### Story S10-01 - Module 13 audit
 
-### Story S10-01 - Best practices consolidation
+As a course maintainer,
+I want Module 13 audited against the Course Bible and Gold Standard Module,
+so that the best-practices module can consolidate the course without becoming a loose checklist.
+
+Acceptance criteria:
+
+- `docs/reviews/module-13-course-bible-audit.md` exists.
+- The audit checks production readiness, maturity model, operating model, governance and trade-off coverage.
+- The audit identifies missing teaching blocks, examples, diagrams and interview questions.
+- `codex/tasks.md` reflects the completed audit when the work is done.
+
+### Story S10-02 - Module 13 upgrade
 
 As a workshop owner,
 I want the best-practices module to summarize course-wide principles,
 so that learners leave with production-ready decision frameworks.
 
-### Story S10-02 - Production case study completion
+Acceptance criteria:
+
+- Module 13 includes Course Bible teaching blocks.
+- The module consolidates instrumentation, Collector, storage, dashboards, alerting and governance practices.
+- The narrative explains trade-offs, maturity levels, production recommendations and common failure modes.
+- Practice assets, key takeaways and interview questions are linked or included.
+
+### Story S10-03 - Module 14 audit
+
+As a course maintainer,
+I want Module 14 audited before expanding the final case study,
+so that the closing module integrates previous modules accurately and consistently.
+
+Acceptance criteria:
+
+- `docs/reviews/module-14-course-bible-audit.md` exists.
+- The audit checks whether the case study covers instrumentation, Collector, ClickHouse, Grafana, dashboards and alerting.
+- The audit identifies missing architecture, walkthrough, production notes and lab guidance.
+- `codex/tasks.md` reflects the completed audit when the work is done.
+
+### Story S10-04 - Module 14 upgrade
 
 As a learner,
 I want a production case study that integrates instrumentation, Collector, ClickHouse, Grafana, dashboards and alerting,
 so that I can see how the full observability platform works end to end.
+
+Acceptance criteria:
+
+- Module 14 includes Course Bible teaching blocks.
+- The module presents an end-to-end production scenario with architecture, walkthrough and operational decisions.
+- The case study connects telemetry generation, collection, storage, visualization, alerting and response.
+- Practice assets, key takeaways and interview questions are linked or included.
 
 ## Story status tracking
 

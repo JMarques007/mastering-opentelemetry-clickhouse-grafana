@@ -333,6 +333,33 @@ Acceptance criteria:
 - The case study connects telemetry generation, collection, storage, visualization, alerting and response.
 - Practice assets, key takeaways and interview questions are linked or included.
 
+### Story S11-01 - Premium SVG visual system
+
+As an instructor,
+I want a consistent visual system for premium SVG explainer images,
+so that every module can use clear, editable, classroom-ready visuals without layout drift or unreadable text.
+
+Acceptance criteria:
+
+- A course visual system document exists or `STYLE_GUIDE.md` is expanded with SVG-specific rules.
+- The guidance defines canvas size, margins, typography, color palette, icon style, card layout, arrows, captions and accessibility expectations.
+- The guidance explicitly prevents known issues such as subtitle overlap, cramped text, inconsistent line weights and non-editable raster-only diagrams.
+- The guidance references the desired visual direction: clean explainer cards, telemetry workflows, signal correlation and end-to-end investigation views.
+
+### Story S11-02 - Module visual refresh
+
+As a learner,
+I want each module to include at least one premium editable SVG explainer image,
+so that complex OpenTelemetry, ClickHouse and Grafana concepts are easier to understand before reading the detailed narrative.
+
+Acceptance criteria:
+
+- Every module has at least one premium SVG explainer image aligned with its main learning outcome.
+- Images are editable SVG, not screenshots, and use the shared visual system.
+- Images are checked for readable text, safe margins, non-overlapping subtitles and consistent visual hierarchy.
+- Module READMEs and narratives link to the correct visual assets.
+- The refreshed visuals include at least one correlation-style image and one logs/metrics/traces comparison-style image.
+
 ## Story status tracking
 
 `codex/tasks.md` remains the execution tracker. When a story is selected for a sprint, add the concrete task checklist there and keep this document as the planning source.
